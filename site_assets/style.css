@@ -1,25 +1,4 @@
-/* ================================================================= */
-/*
-[Table of contents]
-01. Reset CSS
-02. General CSS
-03. Layout and Grid
-04. Slider & Header
-05. Primary Menu & Mobile Menu
-06. Mega Menu
-07. Sub Header
-08. Footer
-09. Widgets & Sociables
-10. Blot Post
-11. Contact Form 7 Styling
-12. Tribe Events Styling
-13. Appointment Section
-14. Appointment Callout
-15. Pest Categories Template
-16. Miscellaneous CSS
-17. Theme Unit Test - Fixes
-*/
-/* ================================================================= */
+
 
 
 
@@ -356,10 +335,9 @@ code, kbd {
 	max-width: 100%;
 }
 
-/**
- * Make sure images with WordPress-added height and width attributes are
- * scaled correctly.
- */
+
+
+
 
 .comment-content img[height],
 .entry-content img,
@@ -471,12 +449,11 @@ img.aligncenter {
 	padding: 0;
 }
 
-/* WordPress Generic */
+/
 
 .bypostauthor { opacity: 1; }
 .sticky .post_content { background-color:#FCF8E3; }
 
-/* WordPress Generic */
 
 .comment-edit-link,
 .post-edit-link { font-weight:bold; }
@@ -1729,12 +1706,7 @@ h2#site-description {
 	width: 100%;
 }
 
-/*=== Comments === */
 
-/**
- * Make sure images with WordPress-added height and width attributes are
- * scaled correctly.
- */
 
 .comment-content img[height],
 .entry-content img,
@@ -2525,7 +2497,7 @@ a.symbol { font-size: 20px;}
 	font-size: 11px;
 }
 
-/*=== Wordpress Tags Cloud === */
+
 
 .tagcloud {
     display: inline-block;

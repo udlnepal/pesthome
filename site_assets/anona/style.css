@@ -1,43 +1,4 @@
-/*
-Theme Name: Anona
-Theme URI: http://themeforest.net/
-Author: AivahThemes
-Author URI: http://themeforest.net/user/AivahThemes
-Description: This theme is useful for WordPress Pest Control Services. Theme comes with ease in usability which makes your site ready in minutes
-Version: 5.3
-License: Themeforest Split Licence
-License URI: https://help.market.envato.com/hc/en-us/articles/202501064-What-is-Split-Licensing-and-the-GPL-
-Tags: two-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-header, editor-style, featured-images, full-width-template, post-formats, sticky-post, theme-options, translation-ready
-Text Domain: anona
-*/
 
-/* ================================================================= */
-/*
-[Table of contents]
-01. Reset CSS
-02. General CSS
-03. Layout and Grid
-04. Slider & Header
-05. Primary Menu & Mobile Menu
-06. Mega Menu
-07. Sub Header
-08. Footer
-09. Widgets & Sociables
-10. Blot Post
-11. Contact Form 7 Styling
-12. Tribe Events Styling
-13. Appointment Section
-14. Appointment Callout
-15. Pest Categories Template
-16. Miscellaneous CSS
-17. Theme Unit Test - Fixes
-*/
-/* ================================================================= */
-
-/* ================================================================= */
-/* 0.1 - Reset                                                       */
-/* http://meyerweb.com/eric/tools/css/reset/ - v2.0 - License: none  */
-/* ================================================================= */
 
 html, body, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,

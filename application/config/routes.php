@@ -2,7 +2,8 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-$route['default_controller']='welcome';
+$route['default_controller']='site';
+$route['admin']='admin_controller';
 
 
 ?>
