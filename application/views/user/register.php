@@ -1,4 +1,4 @@
-
+<?php echo $this->session->flashdata('verify_msg'); ?>
     <div class="content">
         <div class="container-fluid">
     <div class="row">
@@ -55,7 +55,8 @@
                   </button>
                   <h4 class="mt-3"> or be classical </h4>
                 </div>
-                <form class="form" method="" action="https://demos.creative-tim.com/material-dashboard-pro/examples/pages/register.html">
+                 <?php $attributes = array("name" => "registrationform");
+echo form_open("user/register", $attributes);?>
                   <div class="form-group has-default bmd-form-group">
                     <div class="input-group">
                       <div class="input-group-prepend">
@@ -63,8 +64,9 @@
                           <i class="material-icons">face</i>
                         </span>
                       </div>
-                      <input type="text" class="form-control" placeholder="First Name...">
+                      <input type="text" class="form-control" placeholder="First Name..." name="firstname" value="<?php echo set_value('fname');?>">
                     </div>
+                      <span style="color:red"><?php echo form_error('firstname'); ?></span>
                   </div>
                   <div class="form-group has-default bmd-form-group">
                     <div class="input-group">
@@ -73,8 +75,9 @@
                           <i class="material-icons">mail</i>
                         </span>
                       </div>
-                      <input type="text" class="form-control" placeholder="Email...">
+                      <input type="text" class="form-control" placeholder="Email..." name="email" value="<?php echo set_value('email'); ?>">
                     </div>
+                     <span style="color:red"><?php echo form_error('email'); ?></span>
                   </div>
                   <div class="form-group has-default bmd-form-group">
                     <div class="input-group">
@@ -83,10 +86,22 @@
                           <i class="material-icons">lock_outline</i>
                         </span>
                       </div>
-                      <input type="password" placeholder="Password..." class="form-control">
+                      <input type="password" placeholder="Password..." name="password" class="form-control">
                     </div>
+                     <span style="color:red"><?php echo form_error('password'); ?></span>
                   </div>
-                  <div class="form-check">
+                   <div class="form-group has-default bmd-form-group">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">
+                          <i class="material-icons">lock_outline</i>
+                        </span>
+                      </div>
+                      <input type="password" placeholder="Password..." name="cpassword" class="form-control">
+                    </div>
+                     <span style="color:red"><?php echo form_error('cpassword'); ?></span>
+                  </div>
+              <!--     <div class="form-check">
                     <label class="form-check-label">
                       <input class="form-check-input" type="checkbox" value="" checked="">
                       <span class="form-check-sign">
@@ -95,11 +110,11 @@
                       I agree to the
                       <a href="https://demos.creative-tim.com/material-dashboard-pro/examples/pages/register.html#something">terms and conditions</a>.
                     </label>
-                  </div>
+                  </div> -->
                   <div class="text-center">
-                    <a href="https://demos.creative-tim.com/material-dashboard-pro/examples/pages/register.html#pablo" class="btn btn-primary btn-round mt-4">Get Started</a>
+                    <button  type="submit" class="btn btn-primary btn-round mt-4">Get Started</button>
                   </div>
-                </form>
+                 <?php echo form_close(); ?>
               </div>
             </div>
           </div>
@@ -110,20 +125,6 @@
 </div>
   
 
-        
-        
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <p style="color:green; font-style:bold"><?php echo $this->session->flashdata('msg_success'); ?></p>
+<p style="color:red; font-style:bold"><?php echo $this->session->flashdata('msg_error'); ?></p>
