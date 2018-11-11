@@ -28,6 +28,21 @@ class User_model extends CI_Model {
     }
     
 
+public function get_logged_user(){
+ /*    if (!$this->session->userdata('is_logged_in')) {
+            redirect(site_url('user/login'));
+        } else {*/
+
+    $this->db->select('firstname');
+    $this->db->from('user');
+    $this->db->where('email', $this->session->userdata('email'));
+    $query=$this->db->get()->row();
+    $data= $query->firstname;
+    return $data;
+/*}*/
+}
+
+
     public function set_user($id = 0)
     {
         $data = array(

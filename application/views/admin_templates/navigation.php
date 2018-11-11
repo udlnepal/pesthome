@@ -54,9 +54,9 @@
                   </p>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Welcome User</a>
+                  <a class="dropdown-item" href="#">Welcome! &nbsp;<b><?php echo ucfirst($titlename); ?></b></a>
                   <a class="dropdown-item" href="#">Change Password</a>
-                  <a class="dropdown-item" href="#">Log Out!</a>
+                  <a class="dropdown-item" href="<?php echo site_url('user/logout'); ?>">Log Out!</a>
                   
                 </div>
               </li>
