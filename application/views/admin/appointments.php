@@ -10,14 +10,14 @@
                 </div>
                 <div class="card-body">
                   <div class="table-responsive">
-                    <table class="table table-hover">
+                    <table class="table table-hover" id="appointment">
                       <thead class=" text-primary">
                         <th>S.N</th><th>Name</th><th>Email</th><th>Phone</th><th>Date of Appointment</th><th>Status</th>
                       </thead>
                     <tbody class="">
                     	<?php foreach($add_appointment as $key=>$data): ?>
                     	
-                    	<tr><td><?php echo $key; ?></td><td><?php echo $data['firstname'] ?></td><td><?php echo $data['email'] ?></td><td><?php echo $data['phone'] ?></td><td><?php echo $data['date'] ?></td><td><a href="#" data-id="<?php echo $data['app_id'] ?>"><?php echo $data['app_status'] ?></a></td></tr> 
+                    	<tr><td><?php echo $key; ?></td><td><?php echo $data['firstname'] ?></td><td><?php echo $data['email'] ?></td><td><?php echo $data['phone'] ?></td><td><?php echo $data['date'] ?></td><td><a  href="#" data-id="<?php echo $data['app_id'] ?>"><?php echo $data['app_status'] ?></a></td></tr> 
 
                     	                    	<?php  endforeach; ?>
                     </tbody>	

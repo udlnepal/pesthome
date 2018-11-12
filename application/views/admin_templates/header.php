@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" href="<?php echo base_url('admin_assets'); ?>/img/favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    Material Dashboard by Creative Tim
+   Kantipur Pest Control
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
@@ -17,6 +17,7 @@
   <link href="<?php echo base_url('admin_assets'); ?>/css/material-dashboard.css?v=2.1.0" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="<?php echo base_url('admin_assets'); ?>/demo/demo.css" rel="stylesheet" />
+  <link href="<?php echo base_url('admin_assets'); ?>/extra-plugin/datatable/dataTables.bootstrap4.min.css" rel="stylesheet" />
 </head>
 
 <body class="">

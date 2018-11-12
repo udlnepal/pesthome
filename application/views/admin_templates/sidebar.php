@@ -12,15 +12,15 @@
       <div class="sidebar-wrapper">
         <ul class="nav">
           <li class="nav-item active  ">
-            <a class="nav-link" href="./dashboard.html">
+            <a class="nav-link" href="<?php echo base_url('admin'); ?>">
               <i class="material-icons">dashboard</i>
               <p>Dashboard</p>
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="./user.html">
+            <a class="nav-link" href="<?php echo base_url('admin/appointments') ?>">
               <i class="material-icons">person</i>
-              <p>User Profile</p>
+              <p>Appointments</p>
             </a>
           </li>
           <li class="nav-item ">

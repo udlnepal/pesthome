@@ -17,8 +17,11 @@
     
 
   </script>
-  <!--   Core JS Files   -->
   <script src="<?php echo base_url('admin_assets'); ?>/js/core/jquery.min.js" type="text/javascript"></script>
+  <script src="<?php echo base_url('admin_assets'); ?>/extra-plugin/datatable/jquery.dataTables.min.js" type="text/javascript"></script>
+   <script src="<?php echo base_url('admin_assets'); ?>/extra-plugin/datatable/dataTables.bootstrap4.min.js" type="text/javascript"></script>
+  <!--   Core JS Files   -->
+  
   <script src="<?php echo base_url('admin_assets'); ?>/js/core/popper.min.js" type="text/javascript"></script>
   <script src="<?php echo base_url('admin_assets'); ?>/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
   <script src="<?php echo base_url('admin_assets'); ?>/js/plugins/perfect-scrollbar.jquery.min.js"></script>
@@ -36,6 +39,10 @@
     $(document).ready(function() {
       // Javascript method's body can be found in assets/js/demos.js
       md.initDashboardPageCharts();
+
+     
+    $('#appointment').DataTable();
+
 
     });
   </script>
