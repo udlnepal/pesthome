@@ -21,7 +21,7 @@
 		});
 
 		$( function() {
-    $( "#datepicker" ).datepicker();
+    $( "#date" ).datepicker();
   } );
 	});
 	</script>
@@ -70,23 +70,25 @@
 				</div>
 				<div class="two_third mb0 last">
 					<div class="iva_apptform_wrap">
-						<form name="iva_apptform" method="post" action="#" id="iva_apptform223"><div class="one_half form_col">
-							<input type="text" name="iva_apt_name" id="iva_apt_name223" value="" placeholder="First Name" class="iva_name223"></div>
+						<?php echo form_open('site/add_appointment'); ?>
+							<div class="one_half form_col">
+							<input type="text" name="firstname" id="firstname" value="" placeholder="First Name" class="firstname"></div>
 							<div class="one_half form_col last">
-								<input type="text" name="iva_apt_email" value="" placeholder="Email"  id="iva_apt_email223" class="iva_email223">
+								<input type="text" name="email" value="" placeholder="Email"  id="email" class="email">
 							</div>
 							<div class="one_half form_col">
-								<input type="text" name="appointmentdate" readonly value="" placeholder="Date" id="datepicker" class="iva_date-223">
+								<input type="text" name="date" readonly value="" placeholder="Date" id="date" class="date">
 							</div>
 							<div class="one_half form_col last">
-								<input type="text" name="phone" id="iva_apt_phone223" value="" placeholder="Phone" class="iva_phone223">
+								<input type="text" name="phone" id="phone" value="" placeholder="Phone" class="phone">
 							</div>
 							<div class="clear"></div>
-							<button id="button_submit223" type="button" class="btn yellow true large">
+							<input type="text"  style="display:none" value ="unseen" id="app_status" name="app_status">
+							<button id="button_submit223" type="submit" class="btn yellow true large">
 								<span>REQUEST AN INSPECTION</span>
 							</button>
-							<input type="hidden" value ="" id="iva_frm_action223">
-						</form>
+							
+						<?php echo form_close();  ?>
 					</div>
 				</div>
 			</div>

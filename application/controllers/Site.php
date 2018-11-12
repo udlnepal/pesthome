@@ -22,7 +22,11 @@ class Site extends CI_Controller {
     {
         parent::__construct();
         $this->load->helper('url_helper');
-         $this->load->library('session');
+        $this->load->helper('form');
+        $this->load->library('session');
+        $this->load->library('form_validation');
+        $this->load->model('site_model');
+
     }
 	 public function display($view,$data){
 	 		$this->load->view('site_templates/header');
@@ -37,5 +41,21 @@ class Site extends CI_Controller {
 		$data['test_title']="Comming Soong";
 		$this->display('site/index',$data);
 
+	}
+	public function add_appointment()
+	{
+		$this->form_validation->set_rules('firstname','First Name', 'required');
+		$this->form_validation->set_rules('email','Email', 'required');
+		$this->form_validation->set_rules('date','Date', 'required');
+		$this->form_validation->set_rules('phone','Phone', 'required');
+
+		if($this->form_validation->run()===FALSE){
+
+		}
+		else{
+			$this->site_model->confirm_appointment();
+			$this->session->set_flashdata('Success','Thank You For Making Appointment. We Will Contact You Soon!');
+			redirect('site');
+		}
 	}
 }
