@@ -18,6 +18,7 @@
 <link rel='stylesheet'  href='<?php echo base_url('site_assets/'); ?>css/flexslider68b3.css?ver=1' type='text/css' media='all' />
 <link rel='stylesheet'  href='<?php echo base_url('site_assets/'); ?>css/responsive68b3.css?ver=1' type='text/css' media='all' />
 <link rel='stylesheet'  href='<?php echo base_url('site_assets/'); ?>extra-plugin/iva-business-hours-pro/assets/css/iva-bh-front09db.css' type='text/css' media='all' />
+<link rel='stylesheet'  href='<?php echo base_url('site_assets/'); ?>extra-plugin/jqueryui/jquery-ui.min.css' type='text/css' media='all' />
 <script type='text/javascript' src='<?php echo base_url('site_assets/'); ?>js/jquery/jqueryb8ff.js?ver=1.12.4'></script>
 <script type='text/javascript' src='<?php echo base_url('site_assets/'); ?>js/jquery/jquery-migrate.min330a.js'></script>
 <script type='text/javascript' src='<?php echo base_url('site_assets/'); ?>extra-plugin/anona-core/anona-shortcodes/js/frontend/waypoints09db.js'></script>
@@ -25,6 +26,7 @@
 <script type='text/javascript' src='<?php echo base_url('site_assets/'); ?>js/mediaelement/mediaelement-migrate.min09db.js'></script>
 <script type='text/javascript' src='<?php echo base_url('site_assets/'); ?>extra-plugin/revslider/public/assets/js/jquery.themepunch.tools.min23da.js?ver=5.4.8'></script>
 <script type='text/javascript' src='<?php echo base_url('site_assets/'); ?>extra-plugin/revslider/public/assets/js/jquery.themepunch.revolution.min23da.js?ver=5.4.8'></script>
+<script type='text/javascript' src='<?php echo base_url('site_assets/'); ?>extra-plugin/jqueryui/jquery-ui.min.js'></script>
 <link href="http://fonts.googleapis.com/css?family=Droid+Serif:400,700%7CLato:400,300,700,900,400italic,700italic,900italic%7CUbuntu:400,500,700%7C" rel="stylesheet" type="text/css" />
 </head>
 <body class="page-template page-template-template_stretched page-template-template_stretched-php page page-id-2678">

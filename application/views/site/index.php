@@ -19,6 +19,10 @@
 				jQuery(".current-slide").text(slider.currentSlide);
 			}
 		});
+
+		$( function() {
+    $( "#datepicker" ).datepicker();
+  } );
 	});
 	</script>
 <div class="slider_wrapper">
@@ -72,7 +76,7 @@
 								<input type="text" name="iva_apt_email" value="" placeholder="Email"  id="iva_apt_email223" class="iva_email223">
 							</div>
 							<div class="one_half form_col">
-								<input type="text" name="appointmentdate" readonly value="" placeholder="Date" id="dateselect223" class="iva_date-223">
+								<input type="text" name="appointmentdate" readonly value="" placeholder="Date" id="datepicker" class="iva_date-223">
 							</div>
 							<div class="one_half form_col last">
 								<input type="text" name="phone" id="iva_apt_phone223" value="" placeholder="Phone" class="iva_phone223">
