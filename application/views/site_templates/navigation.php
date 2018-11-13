@@ -2,7 +2,7 @@
 	<div class="header">
 		<div class="header-area">
 			<div class="logo">
-				<a href="http://www.aivahthemes.com/wp/anona" title="Anona: Pest Control Services">
+				<a href="" title="Kantipur Control Services">
 				<!--<img src="images/anona-logo-1.png" alt="Anona: Pest Control Services" />-->
 				<b style="color:#ffcc00;"> Kantipur Pest Control</b>
 				</a>
@@ -43,14 +43,14 @@
 			<!-- Header Widget Area -->
 	</div>
 
-		<div id="ivaSearchbar" class="act">
+	<!-- 	<div id="ivaSearchbar" class="act">
 			<div class="inner">
 				<form role="search" method="get" id="searchform" action="http://www.aivahthemes.com/wp/anona/">
 					<input type="text" value="" name="s" id="s" placeholder="Search here..." class="ivaInput headerSearch" />
 					<span class="search-close"><i class="fa fa-close fa-1"></i></span>
 				</form>
 			</div>
-		</div>
+		</div> -->
 
 		<div class="iva-mobile-menu">
 			<ul id="menu-primary-menu" class="iva_mmenu">

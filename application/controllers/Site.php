@@ -42,6 +42,13 @@ class Site extends CI_Controller {
 		$this->display('site/index',$data);
 
 	}
+
+	public function contact()
+	{
+		$data['test_title']="Contact Us";
+		$this->display('site/contact',$data);
+	}
+	
 	public function add_appointment()
 	{
 		$this->form_validation->set_rules('firstname','First Name', 'required');

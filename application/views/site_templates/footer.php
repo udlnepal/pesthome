@@ -132,7 +132,7 @@
 <script type='text/javascript' src='<?php echo base_url('site_assets/'); ?>js/comment-reply.min09db.js'></script>
 <script type='text/javascript' src='<?php echo base_url('site_assets/'); ?>js/jquery/ui/core.mine899.js?ver=1.11.4'></script>
 <script type='text/javascript' src='<?php echo base_url('site_assets/'); ?>js/jquery/ui/datepicker.mine899.js?ver=1.11.4'></script>
-<script type='text/javascript' src='<?php echo base_url('site_assets/'); ?>js/mediaelement/wp-mediaelement.min09db.js'></script>
+<!-- <script type='text/javascript' src='<?php echo base_url('site_assets/'); ?>js/mediaelement/wp-mediaelement.min09db.js'></script> -->
 <script type='text/javascript' src='<?php echo base_url('site_assets/'); ?>js/jquery.easing.1.309db.js'></script>
 <script type='text/javascript' src='<?php echo base_url('site_assets/'); ?>js/hoverIntent09db.js'></script>
 <script type='text/javascript' src='<?php echo base_url('site_assets/'); ?>js/superfish09db.js'></script>
@@ -142,7 +142,7 @@
 <script type='text/javascript' src='<?php echo base_url('site_assets/'); ?>js/sys_custom5152.js?ver=1.0'></script>
 <script type='text/javascript' src='<?php echo base_url('site_assets/'); ?>js/jquery.flexslider-min09db.js'></script>
 <script type='text/javascript' src='<?php echo base_url('site_assets/'); ?>js/theme-love5152.js?ver=1.0'></script>
-<script type='text/javascript' src='<?php echo base_url('site_assets/'); ?>js/wp-embed.min09db.js'></script>
+<!-- <script type='text/javascript' src='<?php echo base_url('site_assets/'); ?>js/wp-embed.min09db.js'></script> -->
 <script type='text/javascript' src='<?php echo base_url('site_assets/'); ?>extra-plugin/anona-core/anona-shortcodes/js/frontend/owl.carousel09db.js'></script>
 
 </body>

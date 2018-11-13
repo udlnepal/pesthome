@@ -24,7 +24,7 @@ class Admin_controller extends CI_Controller {
         $this->load->helper('url_helper');
          $this->load->library('session');
          $this->load->model('user_model');
-         
+       
         if (!$this->session->userdata('is_logged_in')) {
             redirect(site_url('user/login'));
         } 

@@ -14,6 +14,14 @@ public function get_appointment(){
 	return $query->result_array();
 }
 
+
+public function set_app_status($app_id,$app_status){
+$data=array(
+'app_status'=>$app_status,
+);
+$this->db->where('app_id',$app_id);
+return $this->db->update('add_appointment',$data);
+}
 /* write above here */
 }
 ?>
