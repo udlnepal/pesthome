@@ -1,4 +1,4 @@
-      <footer class="footer">
+   <!--    <footer class="footer">
         <div class="container-fluid">
          
           <div class="copyright float-right">
@@ -9,7 +9,7 @@
             <a href="http://www.yupnep.com" target="_blank">Unique Developers Lab</a> 
           </div>
         </div>
-      </footer>
+      </footer> -->
     </div>
   </div>
 

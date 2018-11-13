@@ -2,7 +2,7 @@
         <div class="container-fluid">
 
 <div class="row">
-                	<div class="col-lg-12 text-right"><a href="#" data-target="#addModal" data-toggle="modal" class="btn btn-success">ADD</a></div>
+                	
                 	<div class="col-lg-12">
                 	<div class="card">
                     <div class="card-header card-header-primary">
@@ -10,21 +10,20 @@
                   <p class="card-category">Setup The Contact Part Here!</p>
                 </div>
                 		<div class="card-body">
+                      <div class="col-lg-12 text-right"><a href="#" data-target="#addModal" data-toggle="modal" class="btn btn-success">ADD</a></div>
         					<table class="table table-hover">
         					
         						<thead class="text-primary">
-        							<tr>
-                        <th colspan="3">Map</th>
-                      </tr>
+        							
                       <tr>
-        								<th>Address</th><th>Phone</th><th>Email</th>
+        								 <th width="40%">Map</th><th width="15%">Address</th><th width="15%">Phone</th><th width="15%">Email</th><th width="15%">Action</th>
         							</tr>
         						</thead>
         						<tbody>
         						<?php  foreach ($contact_about as $key=>$data):?>	
-                      <tr><td colspan="3"><?php echo $data['map_plugin'] ?></td></tr>
+                      
                       <tr>
-        								<td><?php echo $data['address'] ?></td><td><?php echo $data['phone'] ?></td><td><?php echo $data['email'] ?></td>
+        								<td><?php echo $data['map_plugin'] ?></td><td><?php echo $data['address'] ?></td><td><?php echo $data['phone'] ?></td><td><?php echo $data['email'] ?></td><td><button class="btn btn-danger">Delete</button></td>
         							</tr>
         						<?php endforeach; ?>
                     </tbody>
@@ -83,3 +82,8 @@
 <?php echo form_close(); ?>
   </div>
 </div>
+<style>
+iframe{
+  height: 200px !important; width: 300px !important;
+}
+  </style>
