@@ -1,0 +1,14 @@
+contact_about:
+cont_id
+map_plugin blog
+address varchar
+email varchar
+phone bigint
+
+contact_form:
+cf_id
+name varchar
+email varchar
+subject varchar
+message varchar
+
