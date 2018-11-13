@@ -12,16 +12,22 @@
                 		<div class="card-body">
         					<table class="table table-hover">
         					
-        						<thead>
+        						<thead class="text-primary">
         							<tr>
-        								<th>Map</th><th>Address</th><th>Phone</th><th>Email</th>
+                        <th colspan="3">Map</th>
+                      </tr>
+                      <tr>
+        								<th>Address</th><th>Phone</th><th>Email</th>
         							</tr>
         						</thead>
         						<tbody>
-        							<tr>
-        								<td>data</td><td>data</td><td>data</td><td>data</td>
+        						<?php  foreach ($contact_about as $key=>$data):?>	
+                      <tr><td colspan="3"><?php echo $data['map_plugin'] ?></td></tr>
+                      <tr>
+        								<td><?php echo $data['address'] ?></td><td><?php echo $data['phone'] ?></td><td><?php echo $data['email'] ?></td>
         							</tr>
-        						</tbody>
+        						<?php endforeach; ?>
+                    </tbody>
         					</table>        			
         
 </div>
@@ -33,6 +39,7 @@
 </div>
 <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
+   <?php echo form_open('admin/contact_setup/add'); ?> 
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Add Contact</h5>
@@ -44,34 +51,35 @@
        <div class="col-lg-12">
        	<div class="input-group mb-3">
   			<div class="input-group-prepend">
-    			<span class="input-group-text" id="basic-addon3">Embedded Code For Map</span>
+    			<span class="input-group-text">Embedded Code For Map</span>
   			</div>
-  			<textarea  class="form-control" id="basic-url" aria-describedby="basic-addon3"></textarea>
+  			<textarea  class="form-control" name="map_plugin" id="man_plugin" ></textarea>
 		</div>
 			<div class="input-group mb-3">
   			<div class="input-group-prepend">
-    			<span class="input-group-text" id="basic-addon3">Address</span>
+    			<span class="input-group-text">Address</span>
   			</div>
-  			<input  class="form-control" id="basic-url" aria-describedby="basic-addon3">
+  			<input  class="form-control" name="address" id="address" >
 		</div>
 		<div class="input-group mb-3">
   			<div class="input-group-prepend">
-    			<span class="input-group-text" id="basic-addon3">Email</span>
+    			<span class="input-group-text">Email</span>
   			</div>
-  			<input  class="form-control" id="basic-url" aria-describedby="basic-addon3">
+  			<input  class="form-control" name="email" id="email" >
 		</div>
 		<div class="input-group mb-3">
   			<div class="input-group-prepend">
-    			<span class="input-group-text" id="basic-addon3">Phone</span>
+    			<span class="input-group-text">Phone</span>
   			</div>
-  			<input  class="form-control" id="basic-url" aria-describedby="basic-addon3">
+  			<input  class="form-control" name="phone" id="phone" >
 		</div>
        </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="submit" class="btn btn-primary">Save changes</button>
       </div>
     </div>
+<?php echo form_close(); ?>
   </div>
 </div>

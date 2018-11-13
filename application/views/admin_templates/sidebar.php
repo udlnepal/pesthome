@@ -42,9 +42,9 @@
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="./map.html">
+            <a class="nav-link" href="<?php echo base_url('admin/contact_setup'); ?>">
               <i class="material-icons">location_ons</i>
-              <p>Maps</p>
+              <p>Contact Setup</p>
             </a>
           </li>
           <li class="nav-item ">
