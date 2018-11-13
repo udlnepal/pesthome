@@ -96,7 +96,7 @@
 						</span>
 					</p>
 					<p>
-						<input type="submit" value="SEND MESSAGE" class="wpcf7-form-control wpcf7-submit"><span class="ajax-loader"></span>
+						<input type="submit" value="SEND MESSAGE" class="wpcf7-form-control wpcf7-submit"><!-- <span class="ajax-loader"></span> -->
 					</p>
 					<div class="wpcf7-response-output wpcf7-display-none"></div>
 				</form>
