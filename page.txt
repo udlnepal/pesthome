@@ -1,0 +1,7 @@
+page_setup:
+page_id
+slug
+page_title
+page_content
+page_image
+
