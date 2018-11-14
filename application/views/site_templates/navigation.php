@@ -2,9 +2,9 @@
 	<div class="header">
 		<div class="header-area">
 			<div class="logo">
-				<a href="" title="Kantipur Control Services">
-				<!--<img src="images/anona-logo-1.png" alt="Anona: Pest Control Services" />-->
-				<b style="color:#ffcc00;"> Kantipur Pest Control</b>
+				<a href="" title="Kantipur Pest Control">
+				<img src="<?php echo base_url('site_assets/'); ?>images/logo_kpc.png" alt="Kantipur Pest Control" />
+				<!-- <b style="color:#ffcc00;"></b> -->
 				</a>
 			</div>
 	<div class="primarymenu menuwrap">

@@ -11,6 +11,7 @@
 <link rel='stylesheet'  href='<?php echo base_url('site_assets/'); ?>extra-plugin/revslider/public/assets/css/settings23da.css?ver=5.4.8' type='text/css' media='all' />
 <link rel='stylesheet'  href='<?php echo base_url('site_assets/'); ?>framework/admin/css/datepicker09db.css' type='text/css' media='all' />
 <link rel='stylesheet'  href='<?php echo base_url('site_assets/'); ?>css/style09db.css' type='text/css' media='all' />
+<link rel='stylesheet'  href='<?php echo base_url('site_assets/'); ?>css/sm-grid.css' type='text/css' media='all' />
 <link rel='stylesheet'  href='<?php echo base_url('site_assets/'); ?>css/prettyPhoto09db.css' type='text/css' media='all' />
 <link rel='stylesheet'  href='<?php echo base_url('site_assets/'); ?>css/fontawesome/css/font-awesome09db.css' type='text/css' media='all' />
 <link rel='stylesheet'  href='<?php echo base_url('site_assets/'); ?>css/fontello/css/aicon_09db.css' type='text/css' media='all' />

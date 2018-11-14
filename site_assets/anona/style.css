@@ -258,7 +258,7 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	background-color: #F7CA18;
+	background-color: #FA3351;
 	border: 0;
 	color: #fff;
 	font-size: 12px;
@@ -1078,7 +1078,7 @@ h2#site-description {
 }
 
 .search-close:hover i,
-.ivaSearch:hover i { color: #F7CA18; }
+.ivaSearch:hover i { color: #FA3351; }
 
 /*=== Sticky Bar ==== */
 #sticky {
@@ -1171,19 +1171,19 @@ h2#site-description {
 	-webkit-box-shadow: inset 0px 3px 0px 0px;
 	-moz-box-shadow: inset 0px 3px 0px 0px;
 	box-shadow: inset 0px 3px 0px 0px ;
-	color:#F7CA18;
+	color:#FA3351;
 }
 
 .sf-menu li li:hover,
 .sf-menu li li.sfHover,
 .sf-menu li li a:focus,
 .sf-menu li li a:hover,
-.sf-menu li li a:active { color: #F7CA18; }
+.sf-menu li li a:active { color: #FA3351; }
 
 .sf-menu li.current-menu-item > a,
 .sf-menu li.current-menu-ancestor > a,
 .sf-menu li.current-page-ancestor > a {
-	color: #F7CA18;
+	color: #FA3351;
 }
 .sf-menu > li.current-menu-item,
 .sf-menu > li.current-menu-ancestor,
@@ -1191,7 +1191,7 @@ h2#site-description {
 	-webkit-box-shadow: inset 0px 3px 0px 0px;
 	-moz-box-shadow: inset 0px 3px 0px 0px;
 	box-shadow: inset 0px 3px 0px 0px;
-	color: #F7CA18;
+	color: #FA3351;
 }
 .sf-menu > li.current-menu-item:hover,
 .sf-menu > li.current-menu-ancestor:hover,
@@ -1199,7 +1199,7 @@ h2#site-description {
 	-webkit-box-shadow: inset 0px 3px 0px 0px;
 	-moz-box-shadow: inset 0px 3px 0px 0px;
 	box-shadow: inset 0px 3px 0px 0px;
-	color: #F7CA18;
+	color: #FA3351;
 }
 .sf-menu li a span {
 	display: block;
@@ -1479,7 +1479,7 @@ h2#site-description {
 /* ================================================================= */
 
 #subheader {
-	background-color: #F7CA18;
+	background-color: #FA3351;
 	color: #222222;
 	border-bottom: 1px solid #dddddd;
 	position: relative;
@@ -1592,7 +1592,7 @@ h2#site-description {
 }
 #footer > .inner { padding: 90px 0 0 0; }
 
-#footer a { color: #ffcc00; }
+#footer a { color: #FA3351; }
 #footer a:hover { color: #ffffff; }
 
 #footer .widget_nav_menu.footermenu li { display: block; }
@@ -2019,7 +2019,7 @@ select.select { cursor: pointer; height: 28px; margin: 0; -moz-opacity: 0; filte
 .page-links a:hover {
 	background: #4abdd4;
 	border: 1px solid #4abdd4;
-	color: #F7CA18;
+	color: #FA3351;
 }
 
 .page-links > .page-links-title {
@@ -2522,8 +2522,8 @@ a.symbol { font-size: 20px;}
 .tagcloud a:hover,
 .tagcloud a:active {
     color: #222222 !important;
-    background-color: #f7ca18;
-    border: 1px solid #f7ca18;
+    background-color: #FA3351;
+    border: 1px solid #FA3351;
 }
 
 .taglist { margin:0; padding:0; border: none;}
@@ -3094,7 +3094,7 @@ select :disabled {
 }
 .iva-date-wrap {
 	position: relative;
-	background-color: #F7CA18;
+	background-color: #FA3351;
 	background-size: cover;
 	padding: 20px 20px;
 	overflow: hidden;
@@ -3455,7 +3455,7 @@ input[type="password"]:focus {
 	width: 40px;
 	height: 40px;
 	display: block;
-	background: #F7CA18 url(images/top_arrow.png) no-repeat center center;
+	background: #FA3351 url(images/top_arrow.png) no-repeat center center;
 	border: 2px solid transparent;
 }
 

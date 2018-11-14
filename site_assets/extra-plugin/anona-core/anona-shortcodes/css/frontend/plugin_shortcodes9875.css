@@ -1,51 +1,3 @@
-/*
-Theme Name: Anona Shortcodes
-*/
-
-/* ================================================================= */
-/*
-[Table of contents]
-01. Google Map
-02. Process - Steps
-03. Tooltip
-04. Accordion
-05. Alert Message Boxes
-06. CountDown
-07. Blockquotes and Pullquotes
-08. Fancybox
-09. Button
-10. Dividers
-11. Dropcap
-12. Services Icon
-13. List Styles FontAwesome
-14. Blog Post Carousel
-15. Pricing Table
-16. Input CSS
-17. Contact Info
-18. Highlight
-19. Fancy Table
-20. Progress Bar
-21. Tabs
-22. Twitter Tweets
-23. Fancy Heading
-24. Flickr Photos
-25. Milestone Count
-26. Section Row
-27. Logo Showcase
-28. Staff Sociables ToolTip
-29. Services Images
-30. Mini - Gallery & Galleria
-31. Feature Box - Shortcode
-32. Gallery - Shortcode
-33. Staff - Shortcode
-34. Testimonials
-35. Partial Section
-36. Services box
-*/
-
-/* ================================================================= */
-/* 01. Google Map                                                    */
-/* ================================================================= */
 
 .atpmap img { width: auto !important; max-width: none; }
 .atpmap { color: #444444; }
@@ -311,15 +263,15 @@ Theme Name: Anona Shortcodes
 
 .toggle-title.active,
 .ac_title.active {
-    border-left-color: #F7CA18;
+    border-left-color: #8f0419;
 }
 
 .ac_wrap .ac_title:hover {
-    border-left-color: #F7CA18;
+    border-left-color: #8f0419;
     color: #222222;
 }
 .ac_title .arrow:hover {
-    background-color: #F7CA18;
+    background-color: #8f0419;
     color: #ffffff;
 }
 
@@ -329,9 +281,9 @@ Theme Name: Anona Shortcodes
 .ac_title.active .arrow,
 .toggle-title.active .arrow {
 	line-height: 34px;
-	background-color: #F7CA18;
+	background-color: #8f0419;
 	color: #ffffff;
-	border-left-color: #F7CA18;
+	border-left-color: #8f0419;
 }
 
 .ac_title i,
@@ -362,7 +314,7 @@ Theme Name: Anona Shortcodes
 	padding: 18px 60px 18px 20px;
 	background-color: #FBFBFB;
 	border: 1px solid #EEEEEE;
-    border-left-color: #F7CA18;
+    border-left-color: #8f0419;
 	border-width: 1px 1px 1px 5px;
 }
 
@@ -995,7 +947,7 @@ blockquote.alignright {
 .btn.cyan, .btn.cyan:hover 			{ background-color: #32c3d6; color: #ffffff; }
 .btn.orange, .btn.orange:hover		{ background-color: #E87E04; color: #ffffff; }
 .btn.red, .btn.red:hover 			{ background-color: #CF000F; color: #ffffff; }
-.btn.yellow, .btn.yellow:hover 		{ background-color: #F7CA18; color: #000000; }
+.btn.yellow, .btn.yellow:hover 		{ background-color: #8f0419; color: #000000; }
 .btn.gray, .btn.gray:hover 			{ background-color: #6C7A89; color: #ffffff; }
 .btn.green, .btn.green:hover 		{ background-color: #81B441; color: #ffffff; }
 .btn.brown, .btn.brown:hover 		{ background-color: #D35400; color: #ffffff; }
@@ -1141,7 +1093,7 @@ a.btn.right{ float: right; }
 .services_icon1 {
 	position: relative;
     display: block;
-    color: #F7CA18;
+    color: #8f0419;
     float: left;
 	font-size: 26px;
     height: 40px;
@@ -1228,7 +1180,7 @@ a.btn.right{ float: right; }
 .services_icon2a.orange	{ color: #E87E04;}
 .services_icon2a.red	{ color: #CF000F;}
 .services_icon2a.magenta{ color: #9A12B3; }
-.services_icon2a.yellow { color: #F7CA18; }
+.services_icon2a.yellow { color: #8f0419; }
 .services_icon2a.blue 	{ color: #4183D7; }
 .services_icon2a.pink  	{ color: #D2527F; }
 .services_icon2a.green 	{ color: #81B441; }
@@ -1242,7 +1194,7 @@ a.btn.right{ float: right; }
 .services_icon2a.orange:hover { background: #E87E04; color:#FFFFFF;}
 .services_icon2a.red:hover  { background: #CF000F; color:#FFFFFF;}
 .services_icon2a.magenta:hover { background: #9A12B3; color:#FFFFFF;}
-.services_icon2a.yellow:hover { background: #F7CA18; color:#FFFFFF;}
+.services_icon2a.yellow:hover { background: #8f0419; color:#FFFFFF;}
 .services_icon2a.blue:hover  { background: #4183D7; color:#FFFFFF;}
 .services_icon2a.pink:hover  { background: #D2527F; color:#FFFFFF;}
 .services_icon2a.green:hover { background: #81B441; color:#FFFFFF;}
@@ -1357,9 +1309,9 @@ a.btn.right{ float: right; }
 	 top: -6px;
 	 left: -6px;
 	 padding: 6px;
-	 -webkit-box-shadow: 0 0 0 1px #F7CA18;
-	 -moz-box-shadow:    0 0 0 1px #F7CA18;
-	 box-shadow:         0 0 0 1px #F7CA18;
+	 -webkit-box-shadow: 0 0 0 1px #8f0419;
+	 -moz-box-shadow:    0 0 0 1px #8f0419;
+	 box-shadow:         0 0 0 1px #8f0419;
 	 -webkit-transform: scale(.8);
 	 -moz-transform:    scale(.8);
 	 -ms-transform:     scale(.8);
@@ -1459,7 +1411,7 @@ a.btn.right{ float: right; }
 .services_icon2b.orange	{ color: #E87E04;}
 .services_icon2b.red	{ color: #CF000F;}
 .services_icon2b.magenta{ color: #9A12B3; }
-.services_icon2b.yellow	{ color: #F7CA18; }
+.services_icon2b.yellow	{ color: #8f0419; }
 .services_icon2b.blue 	{ color: #4183D7; }
 .services_icon2b.pink  	{ color: #D2527F; }
 .services_icon2b.green 	{ color: #81B441; }
@@ -1472,7 +1424,7 @@ a.btn.right{ float: right; }
 .services_icon2b.orange:hover 	{ background: #E87E04; color:#FFFFFF;}
 .services_icon2b.red:hover  	{ background: #CF000F; color:#FFFFFF;}
 .services_icon2b.magenta:hover	{ background: #9A12B3; color:#FFFFFF;}
-.services_icon2b.yellow:hover 	{ background: #F7CA18; color:#FFFFFF;}
+.services_icon2b.yellow:hover 	{ background: #8f0419; color:#FFFFFF;}
 .services_icon2b.blue:hover  	{ background: #4183D7; color:#FFFFFF;}
 .services_icon2b.pink:hover  	{ background: #D2527F; color:#FFFFFF;}
 .services_icon2b.green:hover 	{ background: #81B441; color:#FFFFFF;}
@@ -1865,7 +1817,7 @@ a.btn.right{ float: right; }
 	}
 
 .highlight2	{ font-style: italic; border-bottom:1px dashed; padding: 1px }
-.highlight.yellow	{ background-color: #F7CA18; color:#000000; }
+.highlight.yellow	{ background-color: #8f0419; color:#000000; }
 
 /* ================================================================= */
 /* 19. Fancy Table                                                   */
@@ -1954,7 +1906,7 @@ table.fancy_table {
 	width: 0;
 	overflow: visible !important;
 	position: relative;
-	background-color: #F7CA18;
+	background-color: #8f0419;
 	-webkit-border-radius: 50px;
 	-moz-border-radius:    50px;
 	border-radius:         50px;
@@ -2526,7 +2478,7 @@ ul.tweet li span:last-child { font-size: small; }
   	background-color: #FCFCFC;
 	padding: 10px 15px;
 	min-height: 60px;
-	border-bottom: 3px solid #F7CA18;
+	border-bottom: 3px solid #8f0419;
 	-moz-transition: all 0.2s ease-in;
 	-o-transition: all 0.2s ease-in;
 	-webkit-transition: all 0.2s ease-in;
@@ -2550,7 +2502,7 @@ ul.tweet li span:last-child { font-size: small; }
 	content: "";
 	width: 100%;
 	height:0;
-	background-color: #F7CA18;
+	background-color: #8f0419;
 	-webkit-transition: all 0.2s ease 0s;
 	-moz-transition:    all 0.2s ease 0s;
 	-ms-transition:     all 0.2s ease 0s;

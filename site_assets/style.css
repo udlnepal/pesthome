@@ -1592,7 +1592,7 @@ h2#site-description {
 }
 #footer > .inner { padding: 90px 0 0 0; }
 
-#footer a { color: #ffcc00; }
+#footer a { color: #FA3351; }
 #footer a:hover { color: #ffffff; }
 
 #footer .widget_nav_menu.footermenu li { display: block; }
@@ -3691,4 +3691,12 @@ table.iva_rev_table td{
 
 .header-style2 .minicart-wrap {
 	margin-left: 10px;
+}
+
+.pad_lt_fix{
+	padding-left: 0 !important;
+
+}
+.pad_rt_fix{
+	padding-right: 0 !important;
 }

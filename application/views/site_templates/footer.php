@@ -1,10 +1,26 @@
 <div id="footer">
-	<div class="inner">
-		<div class="one_fourth ">
+	<div class="inner ">
+		<div class="col-lg-12">
+
+<div class="col-lg-4 pad_lt_fix ">
+			<aside id="contactinfo_widgets-3" class=" widget contactinfo-wg">
+				<h3>About Us</h3>
+				<div class="contactinfo-wrap">
+					<p>We are Kantipur Pest Control. We are there for your service and we are commited in providing best pest control service in the town. You can always rely upon us for the pest control.</p>
+				</div>
+			</aside>
+		</div>
+
+
+
+		<div class="col-lg-4 pad_lt_fix ">
 			<aside id="contactinfo_widgets-3" class=" widget contactinfo-wg">
 				<h3>Locate Us</h3>
 				<div class="contactinfo-wrap">
-					<p><strong><span class="details">Anona Postal Address</span></strong></p>
+					<div class="map-box">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d33599.11089997574!2d85.31197412769876!3d27.727427525880376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1913f6454997%3A0xbf1da3147a7708d4!2sKantipur+Pest+Control!5e0!3m2!1sen!2snp!4v1542208385515" width="350" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+					<p><strong><span class="details">Kantipur Pest Control</span></strong></p>
 					<p>
 						<span class="icon"><i class="fa fa-map-marker fa-lg"></i></span>
 						<span class="details">PO Box 15142 Collins Street West<br />
@@ -22,7 +38,7 @@
 				</div>
 			</aside>
 		</div>
-	<div class="one_fourth ">
+	<div class="col-lg-4 pad_rt_fix">
 		<aside id="nav_menu-2" class="footermenu textright widget widget_nav_menu">
 			<h3 class="widget-title">Custom Menu</h3>
 			<div class="menu-footer-menu-container">
@@ -39,46 +55,8 @@
 			</div>
 		</aside>
 	</div>
-	<div class="one_fourth ">
-		<aside id="nav_menu-3" class="footermenu widget widget_nav_menu">
-			<h3 class="widget-title">Custom Menu</h3>
-			<div class="menu-footer-menu-container">
-				<ul id="menu-footer-menu-1" class="menu">
-					<li class="menu-item "><a href="#">Home</a></li>
-					<li class="menu-item "><a href="#">About Us</a></li>
-					<li class="menu-item "><a href="#">Terms &#038; Conditions</a></li>
-					<li class="menu-item "><a href="#">Privacy Policy</a></li>
-					<li class="menu-item "><a href="#">Refund Policy</a></li>
-					<li class="menu-item "><a href="#">FAQ&#8217;s</a></li>
-				</ul>
-			</div>
-		</aside>
-	</div>
-	<div class="one_fourth last">
-		<aside id="contactinfo_widgets-2" class="textright widget contactinfo-wg">
-			<h3>Get in touch!</h3>
-			<div class="contactinfo-wrap">
-				<p>
-					<strong><span class="details">Anona Headquarters</span></strong>
-				</p>
-				<p>
-					<span class="icon"><i class="fa fa-map-marker fa-lg"></i></span>
-					<span class="details">PO Box 15142 Collins Street West<br />
-											Victoria 2007 Australia<br />
-											Anona Headquarters
-					</span>
-				</p>
-				<p class="phone">
-					<span class="icon"><i class="fa fa-phone fa-lg"></i></span>
-					<span class="details">(+00) 0123-456-798</span>
-				</p>
-				<p>
-					<span class="icon"><i class="fa fa-envelope fa-lg"></i></span>
-					<span class="details"><a href="mailto:yourname(@)domain.com">yourname(@)domain.com</a></span>
-				</p>
-			</div>
-		</aside>
-	</div>
+</div>
+
 </div>
 				
 	<div class="copyright">
@@ -87,11 +65,11 @@
 					© 2015 Copyright All Rights Reserved - kantipurpestcontrol.com.np				</div>
 				<div class="copyright_right">
 					Powered by <a href="http://www.yupnep.com/">YupNep</a> - Developed By <a href="http://www.yourdomain.org/">YupNep</a>
-					<a class="at-footer-branches">More Branches</a>				</div>
+					<!-- <a class="at-footer-branches">More Branches</a>	 -->			</div>
 
 			</div><!-- .inner -->
 		</div><!-- .copyright -->
-<div class="footer-branches">
+<!-- <div class="footer-branches">
 				<div class="inner">
 					<aside id="text-4" class=" widget_text">
 						<div class="textwidget">
@@ -117,7 +95,7 @@
 						<div class="clear"></div>
 						</div>
 					</aside>
-				</div>
+				</div> -->
 </div>
 		
 </div><!-- #footer -->
