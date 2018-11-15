@@ -34,17 +34,19 @@
 	<h1 style="display: none;">Kantipur Pest Control</h1>
 	<div id="stretched" class="fullwidth">
 	<div class="bodyoverlay"></div>
-	<div id="trigger" class="tarrow"><i class="fa fa-arrow-circle-o-down fa-lg"></i></div>
-	<div id="sticky">Enter the content which will be displayed in sticky bar.</div>
+	<!-- <div id="trigger" class="tarrow"><i class="fa fa-arrow-circle-o-down fa-lg"></i></div>
+	<div id="sticky">Enter the content which will be displayed in sticky bar.</div> -->
 <div id="wrapper">
 		<div class="topbar">
 			<div class="inner">
 			<div class="one_half ">
+				<?php foreach($contact_setup as $key=>$data):?>
 				<aside id="text-3" class=" widget_text">
 					<div class="textwidget">Call Us Now:<i class="fa fa-phone fa-fw">
-					</i> 1555-555-555<i class="fa fa-envelope fa-fw"></i><a href="mailto:yourname@domain.com">info@yourdomain.com</a>
+					</i><?php echo $data['phone'] ?>&nbsp;<i class="fa fa-envelope fa-fw"></i><a href="mailto:<?php echo $data['email'] ?>"><?php echo $data['email'] ?></a>
 					</div>
 				</aside>
+			<?php endforeach; ?>
 			</div>
 			<div class="one_half last">
 				<aside id="sociable_widget-4" class=" socials-wg">

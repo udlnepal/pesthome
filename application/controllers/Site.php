@@ -26,13 +26,15 @@ class Site extends CI_Controller {
         $this->load->library('session');
         $this->load->library('form_validation');
         $this->load->model('site_model');
+        $this->load->model('contact_setup_model');
 
     }
 	 public function display($view,$data){
-	 		$this->load->view('site_templates/header');
+	 	$data['contact_setup']=$this->contact_setup_model->get_contact();
+	 		$this->load->view('site_templates/header',$data);
 	 		$this->load->view('site_templates/navigation');
 	 		$this->load->view($view,$data);
-	 		$this->load->view('site_templates/footer');
+	 		$this->load->view('site_templates/footer',$data);
 
 	 }
 

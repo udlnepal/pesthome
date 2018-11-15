@@ -32,7 +32,7 @@
 				<li><img alt="Commercial Pest Contol" src="<?php echo base_url('site_assets/'); ?>images/anona-slider-2-1920x550.jpg" width="1920" height="550">						<div class="flex-caption fadeInDown">
 					<div class="flex-title">
 						<h5>Commercial Pest Contol</h5>
-						<h6>We pride ourselves on our reputation as “America’s Pest Control Team”.</h6>
+						<h6>We pride ourselves on our reputation as Nepal's Pest Control Team”.</h6>
 					</div> <!-- .flex-title -->
 					</div><!-- .flex-caption -->
 				</li>
@@ -66,22 +66,22 @@
 						<h1 class="fancy-title large">
 							<span>APPOINTMENT<br></span>
 						</h1>
-						<small>Short Summary for the appointment callout box goes here and you can add more content using shortcode.</small>
+						<small>Make yourself an appointment for the free inspection. Fill up this simple form and we shall contact you soon. </small>
 					</div>
 				</div>
 				<div class="two_third mb0 last">
 					<div class="iva_apptform_wrap">
 						<?php echo form_open('site/add_appointment'); ?>
 							<div class="one_half form_col">
-							<input type="text" name="firstname" id="firstname" value="" placeholder="First Name" class="firstname"></div>
+							<input type="text" name="firstname" id="firstname" value="" placeholder="First Name" class="firstname" required="required"></div>
 							<div class="one_half form_col last">
-								<input type="text" name="email" value="" placeholder="Email"  id="email" class="email">
+								<input type="text" name="email" value="" placeholder="Email"  id="email" class="email" required="required">
 							</div>
 							<div class="one_half form_col">
-								<input type="text" name="date" readonly value="" placeholder="Date" id="date" class="date">
+								<input type="text" name="date" readonly value="" placeholder="Date" id="date" class="date" required="required">
 							</div>
 							<div class="one_half form_col last">
-								<input type="text" name="phone" id="phone" value="" placeholder="Phone" class="phone">
+								<input type="text" name="phone" id="phone" value="" placeholder="Phone" class="phone" required="required">
 							</div>
 							<div class="clear"></div>
 							<input type="text"  style="display:none" value ="unseen" id="app_status" name="app_status">
@@ -152,8 +152,8 @@
 				</span>
 			</h1>
 			<p>
-				Anona provides domestic pest control services and is the name you<br />
-				can trust and deal with any kind of pest problems with in your area.
+				We Kantipur Pest Control provides domestic pest control services and <br />
+				you can trust and deal with any kind of pest problems with in your area.
 			</p>
 		</div>
 		<div class="one_fourth" >
@@ -190,7 +190,7 @@
 				</div>
 				<div class="sIcn_content">
 					<h3>Bed Bug Pest Control</h3>
-				More than 30000+ customers who purchased themes from AivahThemes are happy with the features packed within each of our themes.
+				More than 30000+ customers who have contacted us are happy with the pesto control service that we have proivded for them in past days.
 			</div>
 		</div>
 	</div>
@@ -203,7 +203,7 @@
 					</div>
 					<div class="sIcn_content">
 						<h3>Termites Pest Control</h3>
-					More than 30000+ customers who purchased themes from AivahThemes are happy with the features packed within each of our themes.
+					More than 30000+ customers who have contacted us are happy with the pesto control service that we have proivded for them in past days.
 				</div>
 			</div>
 		</div>
@@ -216,7 +216,7 @@
 					</div>
 					<div class="sIcn_content">
 						<h3>Cockroach Pest Control</h3>
-					AivahThemes has 40+ Items in its portfolio which includes HTML Templates, WordPress Themes, phpBB Skins and Admin Skins.
+					More than 30000+ customers who have contacted us are happy with the pesto control service that we have proivded for them in past days.
 					</div>
 				</div>
 			</div>
@@ -230,7 +230,7 @@
 					</div>
 					<div class="sIcn_content">
 						<h3>Rodents Pest Control</h3>
-					More than 30000+ customers who purchased themes from AivahThemes are happy with the features packed within each of our themes.
+					More than 30000+ customers who have contacted us are happy with the pesto control service that we have proivded for them in past days.
 					</div>
 				</div>
 			</div>
@@ -243,7 +243,7 @@
 					</div>
 					<div class="sIcn_content">
 						<h3>Mosquitoes Pest Control</h3>
-					More than 30000+ customers who purchased themes from AivahThemes are happy with the features packed within each of our themes.
+					More than 30000+ customers who have contacted us are happy with the pesto control service that we have proivded for them in past days.
 					</div>
 					</div>
 				</div>
@@ -256,7 +256,7 @@
 					</div>
 				<div class="sIcn_content">
 					<h3>Flies Pest Control</h3>
-				AivahThemes has 40+ Items in its portfolio which includes HTML Templates, WordPress Themes, phpBB Skins and Admin Skins.
+				More than 30000+ customers who have contacted us are happy with the pesto control service that we have proivded for them in past days.
 				</div>
 				</div>
 			</div>
@@ -290,27 +290,27 @@
 	<div class="testimonial-carousel">
 		<span class="tc-details"></span>
 		<div class="tc-content">
-			<p>"Best theme in the marketplace with all the features needed for the Pest Control Services company and very user friendly with appointments management system as well."</p>
+			<p>"I am very much satisfied with the service provided by Kantipur Pest Control. I would highly recommend anyone who are looking for pest control"</p>
 			<div class="tc-client-meta">
-				<div class="client-name"> - Adrenal Dorsen, Andre Dloex, <a href="http://www.yourdomain.com/" target="_blank">DomainAndre</a></div>
+				<div class="client-name"> - Nar Bahadur Gharti Magar, <a href="http://www.yourdomain.com/" target="_blank">Ghale gaun, Lamjung, Nepal</a></div>
 			</div>
 		</div>
 	</div>
 	<div class="testimonial-carousel">
 		<span class="tc-details"></span>
 		<div class="tc-content">
-			<p>"Anona Theme made our work hassel free with the features included in it are really indeed for a company with having no issues in managing their appointments."</p>
+			<p>"I was very much troubled with ants and then i called Kantipur pest Control for the help i was impressed with their work."</p>
 			<div class="tc-client-meta">
-				<div class="client-name"> - Lorea Claudia, Star Dloex, <a href="http://www.yourdomain.com/" target="_blank">StartDloex</a></div>
+				<div class="client-name"> -Bul Maya Maharjan, <a href="http://www.yourdomain.com/" target="_blank">Sunakothi, Lalipur Nepal</a></div>
 			</div>
 		</div>
 	</div>
 	<div class="testimonial-carousel">
 		<span class="tc-details"></span>
 		<div class="tc-content">
-			<p>"Anona Theme comes with an amazing features useful for the pest control company like managing the appointments and bookings and they have made our life really simple and easy."</p>
+			<p>"Very Affordable Pest Control. They are expert in this. I highly recommend anyone"</p>
 			<div class="tc-client-meta">
-				<div class="client-name"> - John Smith, Star Company, <a href="http://www.yourdomain.com/" target="_blank">Domain</a></div></div>
+				<div class="client-name"> - Surya Bahadur Bohra, <a href="http://www.yourdomain.com/" target="_blank">Thapa gaun, Baneshwor, Nepal</a></div></div>
 			</div>
 		</div>
 	</div>

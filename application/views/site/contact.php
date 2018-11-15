@@ -20,20 +20,30 @@
 </div>
 
 <div id="main" class="fullwidth"><div id="primary" class="pagemid">
+
 	<div class="inner">
+
 		<main class="content-area" role="main">
 			<div class="entry-content-wrapper clearfix">
+				<?php foreach ($contact_setup as $key=>$data): ?>
+		<div class="map_box">
+			
+			<?php echo $data['map_plugin'] ?>
+		</div>
+<?php endforeach;?>
+<div class="clearfix"></div>
 				<div id="post-3175" class="post-3175 page type-page status-publish hentry">				
 				<div id="section37" class="section_row clearfix section_bg    " style="background-color:#ffffff;padding:80px 0;">
 					<div class="iva-section-patterns"></div>
 					<div class="section_inner">
+						<?php foreach($contact_setup as $key=>$data): ?>
 						<div class="one_third">
 							<div class="aligncenter">
 								<i style="color:#444444; font-size:44px;" class="fa fa-envelope-o"></i>
 							<div class="demo_space" style="height:20px"></div>
 							<h4>Have any questions?</h4>
 								<hr>
-							<h5>contact@domain.com</h5>
+							<h5><?php echo $data['email'] ?></h5>
 							</div>
 						</div>
 						<div class="one_third">
@@ -42,7 +52,7 @@
 							<div class="demo_space" style="height:20px"></div>
 							<h4>WhatsApp</h4>
 								<hr>
-							<h5>+91-7000012345</h5>
+							<h5><?php echo $data['phone'] ?></h5>
 							</div>
 						</div>
 						<div class="one_third last">
@@ -51,9 +61,10 @@
 							<div class="demo_space" style="height:20px"></div>
 							<h4>Contact Us</h4>
 								<hr>
-							<h5>+1800-1234567890</h5>
+							<h5><?php echo $data['phone'] ?></h5>
 							</div>
 						</div>
+					<?php endforeach; ?>
 						<div class="clear"></div>
 					</div>
 				</div>
@@ -111,23 +122,23 @@
 				</h3>
 				<p></p>
 			</div>
-				<h4 style="font-weight: 900;">ANONA PEST CONTROL</h4>
+				<h4 style="font-weight: 900;">Kantipur Pest Control</h4>
 				<p>The Complete Pest Control Service Provider.<br>
 				</p>
+				<?php foreach($contact_setup as $key=>$data): ?>
 				<div class="contactinfo-wrap iva_anim ">
 					<p>
-						<i class="fa fa-map-marker fa-fw"></i> PO Box 21177, Little Lonsdale,
-						<br>
-							Melbourne, Victoria, Australia
+						<i class="fa fa-map-marker fa-fw"></i><?php echo $data['address'] ?>
 					</p>
 					<p>
 						<i class="fa fa-link fa-fw"></i>
-						<a href=""> www.envato.com</a>
+						<a href="<?php echo base_url(); ?>"> www.kantipurpescontrol.com.np</a>
 					</p>
 					<p>
-						<i class="fa fa-fax fa-fw"></i> +1800-38376-1234
+						<i class="fa fa-fax fa-fw"></i> <?php echo $data['phone'] ?>
 					</p>
 				</div>
+			<?php endforeach; ?>
 			</div>
 			<div class="clear"></div>			
 				</div>

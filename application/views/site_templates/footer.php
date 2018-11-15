@@ -22,17 +22,21 @@
 					<p><strong><span class="details">Kantipur Pest Control</span></strong></p>
 					<p>
 						<span class="icon"><i class="fa fa-map-marker fa-lg"></i></span>
-						<span class="details">PO Box 15142 Collins Street West<br />
-												120 King Street, Melbourne<br />
-											Victoria 2000 Australia</span>
+						<?php foreach($contact_setup as $key=>$data):?>
+						<span class="details"><?php echo $data['address'] ?><br />
+												
+											
+											
+
 					</p>
 					<p class="phone">
 						<span class="icon"><i class="fa fa-phone fa-lg"></i></span>
-						<span class="details">+61 0 1234 0000</span>
+						<span class="details"><?php echo $data['phone'] ?></span>
 					</p>
 					<p>
 						<span class="icon"><i class="fa fa-envelope fa-lg"></i></span>
-						<span class="details"><a href="mailto:yourname@domain.com">yourname@domain.com</a></span>
+						<span class="details"><a href="mailto:<?php echo $data['email'] ?>"><?php echo $data['email'] ?></a></span>
+						<?php endforeach;?>
 					</p>
 				</div>
 			</aside>
@@ -41,8 +45,11 @@
 			<aside id="contactinfo_widgets-3" class=" widget contactinfo-wg">
 				<h3>Locate Us</h3>
 				<div class="contactinfo-wrap">
-					<div class="map-box">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d33599.11089997574!2d85.31197412769876!3d27.727427525880376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1913f6454997%3A0xbf1da3147a7708d4!2sKantipur+Pest+Control!5e0!3m2!1sen!2snp!4v1542208385515" width="350" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+					<div class="map-box" style="width:350px; height: 200px; overflow: hidden;">
+						
+						<?php foreach($contact_setup as $key=>$data): ?>
+							<?php echo $data['map_plugin'] ?>
+						<?php endforeach; ?>
 					</div>
 					
 				</div>
@@ -96,6 +103,7 @@
 
 </div><!-- #wrapper -->
 </div><!-- #layout -->
+
 
 <div id="back-top"><a href="#header"><span></span></a></div>
 

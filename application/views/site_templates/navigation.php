@@ -9,7 +9,7 @@
 			</div>
 	<div class="primarymenu menuwrap">
 		<ul id="atp_menu" class="sf-menu">
-			<li class="menu-item"><a href="#">Home</a></li>
+			<li class="menu-item"><a href="<?php echo base_url(); ?>">Home</a></li>
 			<li class="menu-item"><a href="#">About Us</a>
 				<!-- <ul class="sub-menu">
 					<li class="menu-item "><a href="../about-us/about-staff/index.html">About Staff</a></li>

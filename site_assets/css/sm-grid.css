@@ -653,3 +653,12 @@
 .text-justify{
   text-align: justify !important;
 }
+
+.sf-menu > li > a {
+    font-size: 15px;
+    color:#14143A;
+
+}
+.btn.yellow, .btn.yellow:hover{
+border-radius: 25px;
+}

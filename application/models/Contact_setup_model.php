@@ -29,7 +29,9 @@ class Contact_setup_model extends CI_Model {
     }
 
     public function get_contact(){
+        $this->db->limit(1);
     	$query=$this->db->get_where('contact_about');
+
     	return $query->result_array();
     }
 /* write above here */
