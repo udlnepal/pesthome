@@ -639,3 +639,17 @@
     margin-left: 0;
   }
 }
+
+/*extra css for fixing */
+.pad_fix{
+  padding:0 !important;
+}
+.pad_rt_fix{
+  padding-right:0 !important;
+}
+.pad_lt_fix{
+  padding-left:0 !important;
+}
+.text-justify{
+  text-align: justify !important;
+}

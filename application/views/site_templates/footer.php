@@ -1,30 +1,20 @@
 <div id="footer">
 	<div class="inner ">
-		<div class="col-lg-12">
+		<div class="col-lg-12 pad_fix">
 
 <div class="col-lg-4 pad_lt_fix ">
 			<aside id="contactinfo_widgets-3" class=" widget contactinfo-wg">
 				<h3>About Us</h3>
 				<div class="contactinfo-wrap">
-					<p>We are Kantipur Pest Control. We are there for your service and we are commited in providing best pest control service in the town. You can always rely upon us for the pest control.</p>
+					<p class="text-justify">We are Kantipur Pest Control. We are there for your service and we are commited in providing best pest control service in the town. You can always rely upon us for the pest control.</p>
 				</div>
 			</aside>
 		</div>
 
 
 
-		<div class="col-lg-4 pad_lt_fix ">
-			<aside id="contactinfo_widgets-3" class=" widget contactinfo-wg">
-				<h3>Locate Us</h3>
-				<div class="contactinfo-wrap">
-					<div class="map-box">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d33599.11089997574!2d85.31197412769876!3d27.727427525880376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1913f6454997%3A0xbf1da3147a7708d4!2sKantipur+Pest+Control!5e0!3m2!1sen!2snp!4v1542208385515" width="350" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
-					</div>
-					
-				</div>
-			</aside>
-		</div>
-			<div class="col-lg-4 pad_lt_fix ">
+		
+			<div class="col-lg-4  ">
 			<aside id="contactinfo_widgets-3" class=" widget contactinfo-wg">
 				<h3>Contact Us</h3>
 				<div class="contactinfo-wrap">
@@ -44,6 +34,17 @@
 						<span class="icon"><i class="fa fa-envelope fa-lg"></i></span>
 						<span class="details"><a href="mailto:yourname@domain.com">yourname@domain.com</a></span>
 					</p>
+				</div>
+			</aside>
+		</div>
+		<div class="col-lg-4 pad_rt_fix ">
+			<aside id="contactinfo_widgets-3" class=" widget contactinfo-wg">
+				<h3>Locate Us</h3>
+				<div class="contactinfo-wrap">
+					<div class="map-box">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d33599.11089997574!2d85.31197412769876!3d27.727427525880376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1913f6454997%3A0xbf1da3147a7708d4!2sKantipur+Pest+Control!5e0!3m2!1sen!2snp!4v1542208385515" width="350" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+					
 				</div>
 			</aside>
 		</div>
