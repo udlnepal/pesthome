@@ -43,6 +43,13 @@ class Site extends CI_Controller {
 
 	}
 
+	public function home2()
+	{
+		$data['test_title']="Comming Soong";
+		$this->display('site/home2',$data);
+
+	}
+
 	public function contact()
 	{
 		$data['test_title']="Contact Us";
