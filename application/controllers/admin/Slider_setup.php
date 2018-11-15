@@ -118,9 +118,9 @@ if($test==0)
 //echo $file_path; exit;
 if(is_file($file_path)){
         unlink($file_path);
-        echo 'File  has been deleted';exit;
+        echo 'File  has been deleted';
       } else {
-        echo 'Could not delete file does not exist';exit;
+        echo 'Could not delete file does not exist';
       }
   
 
