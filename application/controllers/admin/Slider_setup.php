@@ -102,17 +102,29 @@ if($test==0)
          }
 
 
-    public function delete_slider()
+    public function delete()
         {
-        $ss_id = $this->uri->segment(4);
+        $slider_id = $this->uri->segment(4);
         
-        if (empty($ss_id))
+        if (empty($slider_id))
         {
             show_404();
         }
         //  echo "i am here"; exit;      
-        $slider_setup = $this->slider_setup_model->get_slider_image_byid($ss_id);
-        $this->slider_setup_model->delete_slider($ss_id);        
+        $slider_setup = $this->slider_setup_model->get_slider_image_byid($slider_id);
+        $file_path=$slider_setup['slider_image_url'];
+
+
+//echo $file_path; exit;
+if(is_file($file_path)){
+        unlink($file_path);
+        echo 'File  has been deleted';exit;
+      } else {
+        echo 'Could not delete file does not exist';exit;
+      }
+  
+
+        $this->slider_setup_model->delete_slider($slider_id);        
         redirect( base_url() . 'admin/slider_setup');        
         }
 
