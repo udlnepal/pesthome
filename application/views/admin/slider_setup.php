@@ -21,7 +21,7 @@
         						</thead>
         						<tbody>
                       <?php foreach ($slider_setup as $key=>$ss): ?>
-                      <tr><td><img style="max-width: 50px;" src="<?php echo base_url('site_assets/uploads/slider/'.$ss['slider_image_name']); ?>"></td><td></td><td></td><td></td><td><button class="btn btn-danger">Delete</button></td></tr>
+                      <tr><td><img style="max-width: 50px;" src="<?php echo base_url('site_assets/uploads/slider/'.$ss['slider_image_name']); ?>"></td><td><?php echo $ss['']?></td><td></td><td></td><td><button class="btn btn-danger">Delete</button></td></tr>
                     <?php endforeach; ?>
                     </tbody>
         					</table>        			
