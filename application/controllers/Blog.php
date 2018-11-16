@@ -42,6 +42,7 @@ class Blog extends CI_Controller {
     	$data['title']="Welcome to Blog";
     	$this->display('blog/index',$data);
     }
+   
 
 
 }
