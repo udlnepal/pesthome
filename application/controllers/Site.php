@@ -21,9 +21,10 @@ class Site extends CI_Controller {
    public function __construct()
     {
         parent::__construct();
+         $this->load->library('session');
         $this->load->helper('url_helper');
         $this->load->helper('form');
-        $this->load->library('session');
+       
         $this->load->library('form_validation');
         $this->load->model('site_model');
         $this->load->model('contact_setup_model');
