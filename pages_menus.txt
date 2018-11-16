@@ -1,0 +1,17 @@
+inhome:
+menu
+slider
+appointment
+3 steps
+slogan/save time
+services
+testimonials
+
+
+pages:
+about us
+blog->post_page
+contact 
+general page
+
+

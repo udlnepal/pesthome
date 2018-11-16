@@ -6,17 +6,20 @@
 <title>Kantipur Pest Control</title>
 <link rel='stylesheet'  href='<?php echo base_url('site_assets/'); ?>css/styles5560.css' type='text/css' media='all' />
 <link rel='stylesheet'  href='<?php echo base_url('site_assets/'); ?>extra-plugin/anona-core/anona-shortcodes/css/frontend/animate09db.css' type='text/css' media='all' />
-<link rel='stylesheet'  href='<?php echo base_url('site_assets/'); ?>extra-plugin/anona-core/anona-shortcodes/css/fontawesome/css/font-awesome09db.css' type='text/css' media='all' />
+<!-- <link rel='stylesheet'  href='<?php echo base_url('site_assets/'); ?>extra-plugin/anona-core/anona-shortcodes/css/fontawesome/css/font-awesome09db.css' type='text/css' media='all' /> -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 <link rel='stylesheet'  href='<?php echo base_url('site_assets/'); ?>extra-plugin/anona-core/anona-shortcodes/css/frontend/plugin_shortcodes9875.css' type='text/css' media='all' />
 <link rel='stylesheet'  href='<?php echo base_url('site_assets/'); ?>extra-plugin/revslider/public/assets/css/settings23da.css?ver=5.4.8' type='text/css' media='all' />
 <link rel='stylesheet'  href='<?php echo base_url('site_assets/'); ?>framework/admin/css/datepicker09db.css' type='text/css' media='all' />
 <link rel='stylesheet'  href='<?php echo base_url('site_assets/'); ?>css/style09db.css' type='text/css' media='all' />
 <link rel='stylesheet'  href='<?php echo base_url('site_assets/'); ?>css/sm-grid.css' type='text/css' media='all' />
 <link rel='stylesheet'  href='<?php echo base_url('site_assets/'); ?>css/prettyPhoto09db.css' type='text/css' media='all' />
-<link rel='stylesheet'  href='<?php echo base_url('site_assets/'); ?>css/fontawesome/css/font-awesome09db.css' type='text/css' media='all' />
+<!-- <link rel='stylesheet'  href='<?php echo base_url('site_assets/'); ?>css/fontawesome/css/font-awesome09db.css' type='text/css' media='all' /> -->
 <link rel='stylesheet'  href='<?php echo base_url('site_assets/'); ?>css/fontello/css/aicon_09db.css' type='text/css' media='all' />
 <link rel='stylesheet'  href='<?php echo base_url('site_assets/'); ?>css/fontello/css/animation09db.css' type='text/css' media='all' />
-<link rel='stylesheet'  href='<?php echo base_url('site_assets/'); ?>css/flexslider68b3.css?ver=1' type='text/css' media='all' />
+<link rel='stylesheet'  href='<?php echo base_url('site_assets/'); ?>css/flexslider68b3.css?ver=1' type='text/css' media='all' /> 
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.1/flexslider.min.css">
 <link rel='stylesheet'  href='<?php echo base_url('site_assets/'); ?>css/responsive68b3.css?ver=1' type='text/css' media='all' />
 <link rel='stylesheet'  href='<?php echo base_url('site_assets/'); ?>extra-plugin/iva-business-hours-pro/assets/css/iva-bh-front09db.css' type='text/css' media='all' />
 <link rel='stylesheet'  href='<?php echo base_url('site_assets/'); ?>extra-plugin/jqueryui/jquery-ui.min.css' type='text/css' media='all' />
@@ -50,9 +53,9 @@
 			</div>
 			<div class="one_half last">
 				<aside id="sociable_widget-4" class=" socials-wg">
-					<a href="#"><i class="fa fa-facebook-official"></i></a>&nbsp;&nbsp;&nbsp;
-					<a href="#"><i class="fa fa-twitter"></i></a>&nbsp;&nbsp;&nbsp;
-					<a href="#"><i class="fa fa-youtube"></i></a>&nbsp;&nbsp;&nbsp;
+					<a href="#"><i style="font-size:15px;" class="fa fa-facebook"></i></a>&nbsp;&nbsp;&nbsp;
+					<a href="#"><i style="font-size:15px;" class="fa fa-twitter"></i></a>&nbsp;&nbsp;&nbsp;
+					<a href="#"><i style="font-size:15px;" class="fa fa-youtube"></i></a>&nbsp;&nbsp;&nbsp;
 				</aside>
 			</div>
 			</div><!-- /inner -->

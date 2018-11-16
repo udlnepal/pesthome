@@ -45,7 +45,7 @@
 				</li>
 				<li><img  alt="Keeps your home bug free!" src="<?php echo base_url('site_assets/'); ?>images/slider3.jpg" width="1920" height="550">					<div class="flex-caption fadeInDown">
 					<div class="flex-title">
-						<h5>Keeps your surroundings bugs free</h5>
+						<h5>Keep your surroundings bugs free</h5>
 						<h6>We are commited to make you free from all sorts of bugs</h6>
 					</div> <!-- .flex-title -->
 					</div><!-- .flex-caption -->
