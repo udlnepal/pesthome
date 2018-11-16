@@ -29,24 +29,24 @@
 <div class="slider_wrapper">
 		<div class="flexslider">
 			<ul class="slides">
-				<li><img alt="Commercial Pest Contol" src="<?php echo base_url('site_assets/'); ?>images/anona-slider-2-1920x550.jpg" width="1920" height="550">						<div class="flex-caption fadeInDown">
+				<li><img alt="Commercial Pest Contol" src="<?php echo base_url('site_assets/'); ?>images/slider1.jpg" width="1920" height="550">						<div class="flex-caption fadeInDown">
 					<div class="flex-title">
-						<h5>Commercial Pest Contol</h5>
+						<h5>Cockroach Control</h5>
 						<h6>We pride ourselves on our reputation as Nepal's Pest Control Team”.</h6>
 					</div> <!-- .flex-title -->
 					</div><!-- .flex-caption -->
 				</li>
-				<li><img    alt="Termite Control" src="<?php echo base_url('site_assets/'); ?>images/anona-slider-3-1920x550.jpg" width="1920" height="550">							<div class="flex-caption fadeInDown">
+				<li><img    alt="Termite Control" src="<?php echo base_url('site_assets/'); ?>images/slider2.jpg" width="1920" height="550">							<div class="flex-caption fadeInDown">
 					<div class="flex-title">
-						<h5>Termite Control</h5>
+						<h5>Any type of Pest Control</h5>
 						<h6>With our service satisfaction guarantee,  the best value for your money.</h6>
 					</div> <!-- .flex-title -->
 					</div><!-- .flex-caption -->
 				</li>
-				<li><img  alt="Keeps your home bug free!" src="<?php echo base_url('site_assets/'); ?>images/anona-slider-1-1920x550.jpg" width="1920" height="550">					<div class="flex-caption fadeInDown">
+				<li><img  alt="Keeps your home bug free!" src="<?php echo base_url('site_assets/'); ?>images/slider3.jpg" width="1920" height="550">					<div class="flex-caption fadeInDown">
 					<div class="flex-title">
-						<h5>Keeps your home bug free!</h5>
-						<h6>Donec turpis mi, iaculis id condimentum id placerat viverra est</h6>
+						<h5>Keeps your surroundings bugs free</h5>
+						<h6>We are commited to make you free from all sorts of bugs</h6>
 					</div> <!-- .flex-title -->
 					</div><!-- .flex-caption -->
 				</li>
@@ -190,7 +190,7 @@
 				</div>
 				<div class="sIcn_content">
 					<h3>Bed Bug Pest Control</h3>
-				More than 30000+ customers who have contacted us are happy with the pesto control service that we have proivded for them in past days.
+				More than 30000+ customers who have contact us are happy with the pest control service that we have provided for them in past days.
 			</div>
 		</div>
 	</div>
@@ -203,7 +203,7 @@
 					</div>
 					<div class="sIcn_content">
 						<h3>Termites Pest Control</h3>
-					More than 30000+ customers who have contacted us are happy with the pesto control service that we have proivded for them in past days.
+					More than 30000+ customers who have contact us are happy with the pest control service that we have provided for them in past days.
 				</div>
 			</div>
 		</div>
@@ -216,7 +216,7 @@
 					</div>
 					<div class="sIcn_content">
 						<h3>Cockroach Pest Control</h3>
-					More than 30000+ customers who have contacted us are happy with the pesto control service that we have proivded for them in past days.
+					More than 30000+ customers who have contact us are happy with the pest control service that we have provided for them in past days.
 					</div>
 				</div>
 			</div>
@@ -230,7 +230,7 @@
 					</div>
 					<div class="sIcn_content">
 						<h3>Rodents Pest Control</h3>
-					More than 30000+ customers who have contacted us are happy with the pesto control service that we have proivded for them in past days.
+					More than 30000+ customers who have contact us are happy with the pest control service that we have provided for them in past days.
 					</div>
 				</div>
 			</div>
@@ -243,7 +243,7 @@
 					</div>
 					<div class="sIcn_content">
 						<h3>Mosquitoes Pest Control</h3>
-					More than 30000+ customers who have contacted us are happy with the pesto control service that we have proivded for them in past days.
+					More than 30000+ customers who have contact us are happy with the pest control service that we have provided for them in past days.
 					</div>
 					</div>
 				</div>
@@ -256,7 +256,7 @@
 					</div>
 				<div class="sIcn_content">
 					<h3>Flies Pest Control</h3>
-				More than 30000+ customers who have contacted us are happy with the pesto control service that we have proivded for them in past days.
+				More than 30000+ customers who have contact us are happy with the pest control service that we have provided for them in past days.
 				</div>
 				</div>
 			</div>
