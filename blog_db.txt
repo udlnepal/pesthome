@@ -6,3 +6,4 @@ post_content
 post_image_name
 post_image_url
 post_date
+post_status
