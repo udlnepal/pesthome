@@ -662,3 +662,7 @@
 .btn.yellow, .btn.yellow:hover{
 border-radius: 25px;
 }
+
+.flexslider{
+  margin:0 !important;
+}
