@@ -17,6 +17,8 @@ class Create_post_model extends CI_Model {
             'post_image_url'=>$full_path,
             'post_title'=>$this->input->post('post_title'),
             'post_content'=>$this->input->post('post_content'),
+            'post_author'=>$this->input->post('post_author'),
+            'post_date'=> date('M j, Y'),
             'post_status'=>"unpublished",
            
 
@@ -57,7 +59,7 @@ class Create_post_model extends CI_Model {
     }
 
 
- public function delete_slider($post_id)
+ public function delete_post($post_id)
     {
         $this->db->where('post_id', $post_id);
         return $this->db->delete('create_post');

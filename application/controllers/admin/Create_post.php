@@ -12,7 +12,8 @@ class Create_post extends Admin_controller{
 
 
 public function index(){
-	$data['contact_about']=$this->create_post_model->get_post_image_name();
+
+	$data['create_post']=$this->create_post_model->get_post_image_name();
 	$data['titlename']=$this->user_model->get_logged_user();
 	$this->display('admin/create_post',$data);
 }
@@ -23,9 +24,9 @@ public function do_upload()
 
 
 
-                $config['upload_path']          = './site_assets/uploads/slider';
+                $config['upload_path']          = './site_assets/uploads/blog';
                 $config['allowed_types']        = 'jpg|jpeg|png|gif|svg';
-                $config['file_name']='slider';
+                $config['file_name']='blog_image';
 
 
                 $this->load->library('upload', $config);
@@ -36,7 +37,7 @@ public function do_upload()
 
                         $error = array('error' => $this->upload->display_errors());
                      echo "i am still here"; exit;
-                        redirect('admin/slider_setup', $error);
+                        redirect('admin/create_post', $error);
 
                 }
                 else
@@ -60,10 +61,60 @@ if($test==0)
                             'full_path' => $this->upload->data('full_path'),
                     );                      
                        	$this->create_post_model->set_post_image_name($post_id,$data['file_name'],$data['full_path']);
-                        redirect('admin/slider_setup',$data);
+                        redirect('admin/create_post',$data);
 
                 }
         }
+
+
+
+
+      public function edit(){
+            $this->do_upload();
+        $ss_id = $this->uri->segment(4);
+        
+        if (empty($ss_id))
+        {
+            echo "i two";exit;
+            show_404();
+        }
+         $this->load->helper('form');
+        $this->load->library('form_validation');
+
+    $data['sls'] = $this->create_post_model->get_post_image_byid($ss_id);
+    $titlename=$data['sls']['post_img_name'];
+    $data['create_post'] = $this->create_post_model->get_post_image_name();
+//echo "i reached here"; exit;
+           // $this->post_setup_model->set_post_name($ss_id,$titlename);
+
+            redirect('admin/create_post');
+         }
+
+
+    public function delete()
+        {
+        $post_id = $this->uri->segment(4);
+        
+        if (empty($post_id))
+        {
+            show_404();
+        }
+        //  echo "i am here"; exit;      
+        $create_post = $this->create_post_model->get_post_image_byid($post_id);
+        $file_path=$create_post['post_image_url'];
+
+
+//echo $file_path; exit;
+if(is_file($file_path)){
+        unlink($file_path);
+        echo 'File  has been deleted';
+      } else {
+        echo 'Could not delete file does not exist';
+      }
+        $this->create_post_model->delete_post($post_id);        
+        redirect( base_url() . 'admin/create_post');        
+        }
+
 
 /* write above here */
 }

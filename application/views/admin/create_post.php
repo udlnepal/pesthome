@@ -20,7 +20,10 @@
         							</tr>
         						</thead>
         						<tbody>
-        					<tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                      <?php foreach($create_post as $key=>$data): ?>
+        					<tr><td><?php echo $data['post_title'] ?></td><td><?php echo $data['post_content'] ?></td><td><?php echo $data['post_author'] ?></td><td><img style="width:80px;" src="<?php echo base_url('site_assets/uploads/blog/'.$data['post_image_name']) ?>"></td><td><?php echo $data['post_date'] ?></td><td>
+                    <a class="btn btn-danger btn-sm" href="<?php echo base_url('admin/create_post/delete/'.$data['post_id'])?>">Delete</a></td></tr>
+                <?php endforeach; ?>
                     </tbody>
         					</table>        			
         
@@ -59,7 +62,7 @@
   			<div class="input-group-prepend">
     			<span class="input-group-text">Author</span>
   			</div>
-  			<input  class="form-control" name="author" id="author"  value="<?php echo ucfirst($titlename); ?>">
+  			<input  class="form-control" name="post_author" id="author"  value="<?php echo ucfirst($titlename); ?>">
 		</div>
 		<div class="input-group mb-3">
   			<div class="input-group-prepend">

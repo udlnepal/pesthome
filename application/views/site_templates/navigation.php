@@ -31,7 +31,7 @@
 				</ul>
 			</li> -->
 
-			<li class="menu-item "><a href="#">Blog</a></li>
+			<li class="menu-item "><a href="<?php echo base_url('blog'); ?>">Blog</a></li>
 			<!-- <li class="menu-item "><a href="../shop/index.html">Shop page</a></li> -->
 			<li class="menu-item"><a href="<?php echo base_url('site/contact'); ?>">Contact Us</a></li>
 		</ul>
