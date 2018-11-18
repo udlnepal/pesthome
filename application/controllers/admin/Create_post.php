@@ -94,9 +94,10 @@ if($test==0)
     public function delete()
         {
         $post_id = $this->uri->segment(4);
-        
+      //  echo $post_id;exit;
         if (empty($post_id))
         {
+           // echo "here";
             show_404();
         }
         //  echo "i am here"; exit;      
