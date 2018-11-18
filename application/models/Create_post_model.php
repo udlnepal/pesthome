@@ -11,10 +11,11 @@ class Create_post_model extends CI_Model {
     {
 
              $this->load->helper('url');
- 
+        $slug = url_title($this->input->post('post_title'), 'dash', TRUE);
         $data = array(
             'post_image_name'=>$file_name,
             'post_image_url'=>$full_path,
+            'slug'=>$slug,
             'post_title'=>$this->input->post('post_title'),
             'post_content'=>$this->input->post('post_content'),
             'post_author'=>$this->input->post('post_author'),
@@ -66,7 +67,17 @@ class Create_post_model extends CI_Model {
     }
 
 
+public function get_post_content(){
 
+
+        $this->db->select('*');
+        $this->db->from('create_post');
+        $this->db->where('slug',$this->uri->segment(3));
+        $query=$this->db->get();
+
+        return $query->result_array();
+
+        }
 
 
 

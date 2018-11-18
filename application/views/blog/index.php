@@ -25,56 +25,35 @@
 		<div class="inner">		
 			<main class="content-area" role="main">
 				<div class="entry-content-wrapper clearfix">				
+				<?php foreach($create_post as $key=>$data): ?>
 				<article id="post-2177" class="">
 					<header class="entry-header">
 						<div class="entry-meta">
 							<span class="iva-pm-byauthor">
-								<a href="#">Author</a>
+								<a href="#"><?php echo $data['post_author']?></a>
 							</span>
-							<span class="iva-pm-postin">April 6, 2015</span>
+							<span class="iva-pm-postin"><?php echo $data['post_date']?></span>
 						</div><!-- .entry-meta -->
 						<h2 class="entry-title">
-							<a href="../sharing-test-title-goes-here/index.html" rel="bookmark">Post Title Goes Here</a>
+							<a href="../sharing-test-title-goes-here/index.html" rel="bookmark"><?php echo $data['post_title']?></a>
 						</h2>
 					</header><!-- .entry-header -->
 
 					<div class="postimg">
 					<figure>
-						<img    alt="Post Title Goes Here" src="<?php  echo base_url('site_assets/images/'); ?>bagimage-870x350.jpg" width="870" height="350"></figure>
+						<img    alt="Post Title Goes Here" src="<?php  echo base_url('site_assets/uploads/blog/'); ?><?php echo $data['post_image_name']?>" width="870" height="350"></figure>
 					</div>
 					<div class="entry-content">
-						<p>Fusce feugiat a justo non rutrum. Phasellus porttitor sapien mauris, sit amet viverra est imperdiet ac. Sed nec tellus vitae justo sodales aliquam ac non lorem. Donec hendrerit orci ac ipsum egestas facilisis ut nec magna. Nulla eget blandit risus, at auctor justo. Duis sit amet augue sit amet erat porttitor facilisis eu nec metus. Maecenas posuere lacinia massa, non auctor risus. Duis erat urna, auctor ut elit sit amet; consectetur hendrerit nunc. Cras in neque a magna placerat sollicitudin. Vivamus sed convallis ante, eget scelerisque eros. Ut magna metus; elementum in sagittis non, dapibus eget leo.
+						<p>
+							<?php echo character_limiter($data['post_content'], 20) ?>
 						</p>
-						<a class="more-link" href="post/slug">
+						<a class="more-link" href="<?php echo base_url('blog/post/'.$data['slug']) ?>">
 						<span>Continue reading</span>
 						</a>		
 					</div><!-- .entry-content -->
 				</article>
-				<article id="post-2177" class="">
-					<header class="entry-header">
-						<div class="entry-meta">
-							<span class="iva-pm-byauthor">
-								<a href="#">Author</a>
-							</span>
-							<span class="iva-pm-postin">April 6, 2015</span>
-						</div><!-- .entry-meta -->
-						<h2 class="entry-title">
-							<a href="../sharing-test-title-goes-here/index.html" rel="bookmark">Post Title Goes Here</a>
-						</h2>
-					</header><!-- .entry-header -->
-
-					<div class="postimg">
-					<figure>
-						<img    alt="Post Title Goes Here" src="<?php  echo base_url('site_assets/images/'); ?>bagimage-870x350.jpg" width="870" height="350"></figure>
-					</div>
-					<div class="entry-content">
-						<p>Fusce feugiat a justo non rutrum. Phasellus porttitor sapien mauris, sit amet viverra est imperdiet ac. Sed nec tellus vitae justo sodales aliquam ac non lorem. Donec hendrerit orci ac ipsum egestas facilisis ut nec magna. Nulla eget blandit risus, at auctor justo. Duis sit amet augue sit amet erat porttitor facilisis eu nec metus. Maecenas posuere lacinia massa, non auctor risus. Duis erat urna, auctor ut elit sit amet; consectetur hendrerit nunc. Cras in neque a magna placerat sollicitudin. Vivamus sed convallis ante, eget scelerisque eros. Ut magna metus; elementum in sagittis non, dapibus eget leo.
-						</p>
-						<a class="more-link" href="post/slug">
-						<span>Continue reading</span>
-						</a>		
-					</div><!-- .entry-content -->
-				</article>
+			<?php endforeach; ?>
+				
 				</div>
 			</main><!-- .content-area -->
 			

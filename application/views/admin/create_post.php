@@ -56,7 +56,7 @@
   			<div class="input-group-prepend">
     			<span class="input-group-text">Content</span>
   			</div>
-  			<textarea  class="form-control" name="post_content" id="post_content" ></textarea>
+  			<textarea  class="form-control ckeditor" name="post_content" id="post_content" ></textarea>
 		</div>
 		<div class="input-group mb-3">
   			<div class="input-group-prepend">

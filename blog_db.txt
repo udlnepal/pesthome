@@ -3,7 +3,20 @@ create_post:
 post_id
 post_title
 post_content
+post_author
 post_image_name
 post_image_url
+slug
 post_date
 post_status
+
+
+db for page:
+create_page
+page_id
+page_title
+pag_content
+page_image_name
+page_image_url
+slug
+

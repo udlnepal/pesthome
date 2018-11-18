@@ -10,7 +10,9 @@ class Blog extends CI_Controller {
         $this->load->helper('form');      
         $this->load->library('form_validation');
         $this->load->model('site_model');
+        $this->load->model('create_post_model');
         $this->load->model('contact_setup_model');
+        $this->load->helper('text');
 
     }
 
@@ -24,10 +26,16 @@ class Blog extends CI_Controller {
     }
     public function index()
     {   $data['contact_setup']=$this->contact_setup_model->get_contact();
+        $data['create_post']=$this->create_post_model->get_post_image_name();
     	$data['title']="Welcome to Blog";
     	$this->display('blog/index',$data);
     }
    
-
+     public function post()
+    {   $data['contact_setup']=$this->contact_setup_model->get_contact();
+        $data['create_post']=$this->create_post_model->get_post_content();
+        $data['title']="Welcome to Blog";
+        $this->display('blog/post',$data);
+    }
 
 }
