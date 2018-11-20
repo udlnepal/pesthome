@@ -49,8 +49,14 @@ $classvalue=$this->uri->segment(2);
                 <b class="caret"></b>
               </p>
             </a>
-            <div class="collapse <?php if ($classvalue=='slider_setup' or $classvalue=='contact_setup')   echo "show"?>" id="pagesExamples" style="">
+            <div class="collapse <?php if ($classvalue=='slider_setup' or $classvalue=='contact_setup' or $classvalue=='menu_setup')   echo "show"?>" id="pagesExamples" style="">
               <ul class="nav">
+                <li class="nav-item <?php if ($classvalue=='menu_setup') echo "active" ?> ">
+                  <a class="nav-link" href="<?php echo base_url('admin/menu_setup'); ?>">
+                    <i class="material-icons">menu</i>
+                    <p>Menu Setup</p>
+                  </a>
+                  </li> 
                 <li class="nav-item <?php if ($classvalue=='slider_setup') echo "active" ?> ">
                   <a class="nav-link" href="<?php echo base_url('admin/slider_setup') ?>">
                     <i class="material-icons">photos</i>
@@ -61,7 +67,9 @@ $classvalue=$this->uri->segment(2);
                   <a class="nav-link" href="<?php echo base_url('admin/contact_setup'); ?>">
                     <i class="material-icons">location_ons</i>
                     <p>Contact Setup</p>
-                  </a>              
+                  </a>
+                  </li>
+                                 
               </ul>
             </div>
           </li>

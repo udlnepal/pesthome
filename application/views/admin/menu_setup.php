@@ -16,14 +16,14 @@
         						<thead class="text-primary">
         							
                       <tr>
-        								 <th width="40%">Map</th><th width="15%">Address</th><th width="15%">Phone</th><th width="15%">Email</th><th width="15%">Action</th>
+        								 <th width="40%">Menu Name</th><th width="15%">Page Id</th><th width="15%">Menu Order</th><th width="15%">Action</th>
         							</tr>
         						</thead>
         						<tbody>
         						<?php  foreach ($menu_setup as $key=>$data):?>	
                       
                       <tr>
-        								<td><?php echo $data['map_plugin'] ?></td><td><?php echo $data['address'] ?></td><td><?php echo $data['phone'] ?></td><td><?php echo $data['email'] ?></td><td><button class="btn btn-danger">Delete</button></td>
+        								<td><?php echo $data['ms_title'] ?></td><td><?php echo $data['ms_page_id'] ?></td><td><?php echo $data['ms_order'] ?></td><td><a onclick="return confirm('Are you sure you want to delete?')" href="<?php echo base_url('admin/menu_setup/delete/'.$data['ms_id']); ?>" class="btn btn-danger">Delete</a></td>
         							</tr>
         						<?php endforeach; ?>
                     </tbody>
@@ -48,30 +48,31 @@
       </div>
       <div class="modal-body">
        <div class="col-lg-12">
-       	<div class="input-group mb-3">
+      
+		
+		<div class="input-group mb-3">
   			<div class="input-group-prepend">
-    			<span class="input-group-text">Embedded Code For Map</span>
+    			<span class="input-group-text">Select Page</span>
   			</div>
-  			<textarea  class="form-control" name="map_plugin" id="man_plugin" ></textarea>
-		</div>
-			<div class="input-group mb-3">
-  			<div class="input-group-prepend">
-    			<span class="input-group-text">Address</span>
-  			</div>
-  			<input  class="form-control" name="address" id="address" >
+  		<select class="form-control" name="ms_page_id" id="ms_page_id">
+      <?php foreach($create_page as $key=>$cpdata): ?>
+        <option value="<?php echo $cpdata['page_id'] ?>"><?php echo $cpdata['page_title'] ?></option>
+      <?php endforeach; ?>
+      </select>
 		</div>
 		<div class="input-group mb-3">
   			<div class="input-group-prepend">
-    			<span class="input-group-text">Email</span>
+    			<span class="input-group-text">Menu Title</span>
   			</div>
-  			<input  class="form-control" name="email" id="email" >
+  			<input  class="form-control" name="ms_title" id="ms_title" >
 		</div>
-		<div class="input-group mb-3">
-  			<div class="input-group-prepend">
-    			<span class="input-group-text">Phone</span>
-  			</div>
-  			<input  class="form-control" name="phone" id="phone" >
-		</div>
+
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Menu Order</span>
+        </div>
+        <input type="text"  class="form-control" name="ms_order" id="ms_order" >
+    </div>
        </div>
       </div>
       <div class="modal-footer">
