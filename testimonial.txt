@@ -1,0 +1,6 @@
+Testimonials Setup:
+ts_id
+ts_feedback
+ts_customer
+ts_address
+
