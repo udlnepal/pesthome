@@ -16,12 +16,12 @@
         						<thead class="text-primary">
         							
                       <tr>
-        								 <th width="40%">page Title</th><th width="15%">Content</th><th width="15%">Image</th><th width="15%">Action</th>
+        								 <th>Page ID</th><th width="40%">Page Title</th><th width="15%">Content</th><th width="15%">Image</th><th width="15%">Action</th>
         							</tr>
         						</thead>
         						<tbody>
                       <?php foreach($create_page as $key=>$data): ?>
-        					<tr><td><?php echo $data['page_title'] ?></td><td><?php echo $data['page_content'] ?></td><td><img style="width:80px;" src="<?php echo base_url('site_assets/uploads/blog/'.$data['page_image_name']) ?>"></td><td>
+        					<tr><td><?php echo $data['page_id'] ?></td><td><?php echo $data['page_title'] ?></td><td><?php echo $data['page_content'] ?></td><td><img style="width:80px;" src="<?php echo base_url('site_assets/uploads/blog/'.$data['page_image_name']) ?>"></td><td>
                     <a class="btn btn-danger btn-sm" href="<?php echo base_url('admin/create_page/delete/'.$data['page_id'])?>">Delete</a></td></tr>
                 <?php endforeach; ?>
                     </tbody>
@@ -48,7 +48,7 @@
        <div class="col-lg-12">
        	<div class="input-group mb-3">
   			<div class="input-group-prepend">
-    			<span class="input-group-text">page Title</span>
+    			<span class="input-group-text">Page Title</span>
   			</div>
   			<input type="text"  class="form-control" name="page_title" id="page_title" >
 		</div>

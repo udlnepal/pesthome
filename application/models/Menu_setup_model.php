@@ -9,7 +9,7 @@ class Menu_setup_model extends CI_Model {
     }
 
 
-    public function set_menu($cont_id=0){
+    public function set_menu($ms_id=0){
     	$data=array(
     	'ms_page_id'=>$this->input->post('ms_page_id'),
     	'ms_title'=>$this->input->post('ms_title'),
@@ -18,11 +18,11 @@ class Menu_setup_model extends CI_Model {
 
     	);
 
-    	if($cont_id==0){
+    	if($ms_id==0){
     		return $this->db->insert('menu_setup',$data);
     	}
     	else{
-    		$this->db->where('cont_id',$cont_id);
+    		$this->db->where('ms_id',$ms_id);
     		return $this->db->update('menu_setup',$data);
     	}
 
