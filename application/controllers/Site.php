@@ -58,8 +58,10 @@ class Site extends CI_Controller {
 
 
 	public function page()
+
 	{
-		 $data['create_page']=$this->create_page_model->get_page_content();
+
+		$data['create_page']=$this->create_page_model->get_page_content();
 		$this->display('site/page',$data);
 	}
 
