@@ -1,0 +1,14 @@
+menu name:
+select page
+
+
+
+menu_setup:
+ms_id
+ms_page_id
+ms_title
+
+sub_menu_setup
+sms_id
+sms_ms_id
+sms_title
