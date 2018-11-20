@@ -18,9 +18,9 @@ class Create_page_model extends CI_Model {
             'slug'=>$slug,
             'page_title'=>$this->input->post('page_title'),
             'page_content'=>$this->input->post('page_content'),
-            'page_author'=>$this->input->post('page_author'),
-            'page_date'=> date('M j, Y'),
-            'page_status'=>"unpublished",
+          //  'page_author'=>$this->input->post('page_author'),
+           // 'page_date'=> date('M j, Y'),
+           // 'page_status'=>"unpublished",
            
 
         );

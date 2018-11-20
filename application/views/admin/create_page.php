@@ -7,7 +7,7 @@
                 	<div class="card">
                     <div class="card-header card-header-primary">
                   <h4 class="card-title ">Create page</h4>
-                  <p class="card-category">Add/Edit/Delete page for Blog!</p>
+                  <p class="card-category">Add/Edit/Delete Inner Page!</p>
                 </div>
                 		<div class="card-body">
                       <div class="col-lg-12 text-right"><a href="#" data-target="#addModal" data-toggle="modal" class="btn btn-success">ADD</a></div>
@@ -16,12 +16,12 @@
         						<thead class="text-primary">
         							
                       <tr>
-        								 <th width="40%">page Title</th><th width="15%">Content</th><th width="15%">Author</th><th width="15%">Image</th><th>Date</th><th width="15%">Action</th>
+        								 <th width="40%">page Title</th><th width="15%">Content</th><th width="15%">Image</th><th width="15%">Action</th>
         							</tr>
         						</thead>
         						<tbody>
                       <?php foreach($create_page as $key=>$data): ?>
-        					<tr><td><?php echo $data['page_title'] ?></td><td><?php echo $data['page_content'] ?></td><td><?php echo $data['page_author'] ?></td><td><img style="width:80px;" src="<?php echo base_url('site_assets/uploads/blog/'.$data['page_image_name']) ?>"></td><td><?php echo $data['page_date'] ?></td><td>
+        					<tr><td><?php echo $data['page_title'] ?></td><td><?php echo $data['page_content'] ?></td><td><img style="width:80px;" src="<?php echo base_url('site_assets/uploads/blog/'.$data['page_image_name']) ?>"></td><td>
                     <a class="btn btn-danger btn-sm" href="<?php echo base_url('admin/create_page/delete/'.$data['page_id'])?>">Delete</a></td></tr>
                 <?php endforeach; ?>
                     </tbody>
@@ -58,12 +58,12 @@
   			</div>
   			<textarea  class="form-control ckeditor" name="page_content" id="page_content" ></textarea>
 		</div>
-		<div class="input-group mb-3">
+	<!-- 	<div class="input-group mb-3">
   			<div class="input-group-prepend">
     			<span class="input-group-text">Author</span>
   			</div>
   			<input  class="form-control" name="page_author" id="author"  value="<?php echo ucfirst($titlename); ?>">
-		</div>
+		</div> -->
 		<div class="input-group mb-3">
   			<div class="input-group-prepend">
     			<span class="input-group-text">Image</span>

@@ -35,6 +35,12 @@ $classvalue=$this->uri->segment(2);
               <p>Create Post(Blog)</p>
             </a>
           </li>
+            <li class="nav-item   <?php if ($classvalue=='create_page') echo "active" ?>  ">
+            <a class="nav-link" href="<?php echo base_url('admin/create_page') ?>">
+              <i class="material-icons">file_copy</i>
+              <p>Create Page</p>
+            </a>
+          </li>
         
         <li class="nav-item ">
             <a class="nav-link collapsed" data-toggle="collapse" href="#pagesExamples" aria-expanded="false">
