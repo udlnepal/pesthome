@@ -28,12 +28,15 @@ class Site extends CI_Controller {
         $this->load->library('form_validation');
         $this->load->model('site_model');
         $this->load->model('contact_setup_model');
+        $this->load->model('menu_setup_model');
+        $this->load->model('create_page_model');
 
     }
 	 public function display($view,$data){
 	 	$data['contact_setup']=$this->contact_setup_model->get_contact();
+	 	$data['menu_setup']=$this->menu_setup_model->get_menu();
 	 		$this->load->view('site_templates/header',$data);
-	 		$this->load->view('site_templates/navigation');
+	 		$this->load->view('site_templates/navigation',$data);
 	 		$this->load->view($view,$data);
 	 		$this->load->view('site_templates/footer',$data);
 
@@ -51,6 +54,13 @@ class Site extends CI_Controller {
 		$data['test_title']="Comming Soong";
 		$this->display('site/index_backup',$data);
 
+	}
+
+
+	public function page()
+	{
+		 $data['create_page']=$this->create_page_model->get_page_content();
+		$this->display('site/page',$data);
 	}
 
 	public function contact()

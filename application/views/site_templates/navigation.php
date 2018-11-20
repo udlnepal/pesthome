@@ -10,10 +10,8 @@
 	<div class="primarymenu menuwrap">
 		<ul id="atp_menu" class="sf-menu">
 			<li class="menu-item"><a href="<?php echo base_url(); ?>">Home</a></li>
-			<li class="menu-item"><a href="#">About Us</a>
-				<!-- <ul class="sub-menu">
-					<li class="menu-item "><a href="../about-us/about-staff/index.html">About Staff</a></li>
-				</ul> -->
+			<!-- <li class="menu-item"><a href="#">About Us</a>
+			
 			</li>
 			<li class="menu-item"><a href="#">Pest Control</a>
 				<ul class="sub-menu">
@@ -22,14 +20,10 @@
 					<li class="menu-item "><a href="#">Commercial Services</a></li>
 					<li class="menu-item "><a href="#">Pest Categories</a></li>
 				</ul>
-			</li>
-		<!-- 	<li class="menu-item"><a href="../appointment/index.html">Appointment</a>
-				<ul class="sub-menu">
-					<li class="menu-item "><a href="../manage-un-confirm-appointments/index.html">Manage Un Confirm Appointments</a></li>
-					<li class="menu-item "><a href="../confirm-appointments/index.html">Manage Confirm Appointments</a></li>
-					<li class="menu-item "><a href="../manage-cancel-appointments/index.html">Manage Cancel Appointments</a></li>
-				</ul>
 			</li> -->
+<?php foreach($menu_setup as $data): ?>
+			<li class="menu-item"><a href="<?php ?>"><?php echo $data['ms_title'] ?></a></li>
+<?php endforeach;?>		
 
 			<li class="menu-item "><a href="<?php echo base_url('blog'); ?>">Blog</a></li>
 			<!-- <li class="menu-item "><a href="../shop/index.html">Shop page</a></li> -->
@@ -37,20 +31,9 @@
 		</ul>
 		<a href="#" class="iva-mobile-dropdown"></a> 
 	</div>
-	<!-- <div class="icn_wrap">
-		<div id="ivaSearch" class="ivaSearch icnalign"><i class="fa fa-search fa-1"></i></div>
-	</div> -->
-			<!-- Header Widget Area -->
+
 	</div>
 
-	<!-- 	<div id="ivaSearchbar" class="act">
-			<div class="inner">
-				<form role="search" method="get" id="searchform" action="http://www.aivahthemes.com/wp/anona/">
-					<input type="text" value="" name="s" id="s" placeholder="Search here..." class="ivaInput headerSearch" />
-					<span class="search-close"><i class="fa fa-close fa-1"></i></span>
-				</form>
-			</div>
-		</div> -->
 
 		<div class="iva-mobile-menu">
 			<ul id="menu-primary-menu" class="iva_mmenu">

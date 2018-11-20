@@ -670,3 +670,6 @@ border-radius: 25px;
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
     transform: rotate(180deg);
 }
+.clearfix{
+  clear:both !important;
+}
