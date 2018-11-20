@@ -35,6 +35,11 @@ class Menu_setup_model extends CI_Model {
     	return $query->result_array();
     }
 
+    public function get_page_from_menu(){
+        $query=$this->db->query('select *from create_page join menu_setup on page_id= ms_page_id');
+        return $query->result_array();
+    }
+
     public function delete_menu($ms_id){
          $this->db->where('ms_id', $ms_id);
         return $this->db->delete('menu_setup');

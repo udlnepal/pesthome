@@ -22,7 +22,7 @@
 				</ul>
 			</li> -->
 <?php foreach($menu_setup as $data): ?>
-			<li class="menu-item"><a href="<?php ?>"><?php echo $data['ms_title'] ?></a></li>
+			<li class="menu-item"><a href="<?php echo base_url('site/page/'.$data['slug']); ?>"><?php echo $data['ms_title'] ?></a></li>
 <?php endforeach;?>		
 
 			<li class="menu-item "><a href="<?php echo base_url('blog'); ?>">Blog</a></li>

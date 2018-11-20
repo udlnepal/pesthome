@@ -18,7 +18,7 @@ class Blog extends CI_Controller {
     }
 
     public function display($view,$data){
-    	$data['menu_setup']=$this->menu_setup_model->get_menu();
+    	$data['menu_setup']=$this->menu_setup_model->get_page_from_menu();
     	$this->load->view('site_templates/header',$data);
     	$this->load->view('site_templates/navigation',$data);
     	$this->load->view($view,$data);
