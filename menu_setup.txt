@@ -7,6 +7,8 @@ menu_setup:
 ms_id
 ms_page_id
 ms_title
+ms_order
+
 
 sub_menu_setup
 sms_id
