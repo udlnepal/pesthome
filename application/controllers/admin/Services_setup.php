@@ -31,6 +31,25 @@ public function add(){
 
 }
 
+public function edit(){
+$service_id=$this->uri->segment(4);
+if(empty($service_id)){
+	show_404();
+}
+$this->services_setup_model->set_services($service_id);
+redirect('admin/services_setup');
+
+}
+
+public function delete(){
+	$service_id=$this->uri->segment(4);
+	if(empty($service_id)){
+		show_404();
+	}
+	$this->services_setup_model->delete_services($service_id);
+	redirect('admin/services_setup');	
+}
+
 /* write above here */
 }
 ?>

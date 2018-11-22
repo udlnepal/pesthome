@@ -34,10 +34,25 @@ public function do_upload()
 
                 if ( ! $file )
                 {
+$test = $this->uri->segment(4);
 
-                        $error = array('error' => $this->upload->display_errors());
-                     echo "i am still here"; exit;
-                        redirect('admin/create_post', $error);
+if($test==0)
+                    {
+                        $post_id=0;
+                     
+                    }
+                else {
+                  
+                   $post_id = $this->uri->segment(4);
+  
+                }
+
+                        $data = array(
+                            'file_name' => 'no_image',
+                            'full_path' => 'not_found',
+                    );                      
+                        $this->create_post_model->set_post_image_name($post_id,$data['file_name'],$data['full_path']);
+                        redirect('admin/create_post',$data);
 
                 }
                 else

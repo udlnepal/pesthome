@@ -45,7 +45,7 @@ $classvalue=$this->uri->segment(2);
         <li class="nav-item ">
             <a class="nav-link collapsed" data-toggle="collapse" href="#pagesExamples" aria-expanded="false">
               <i class="material-icons">settings</i>
-              <p> Setup
+              <p> General Setup
                 <b class="caret"></b>
               </p>
             </a>
@@ -72,7 +72,7 @@ $classvalue=$this->uri->segment(2);
                     <li class="nav-item <?php if ($classvalue=='services_setup') echo "active" ?> ">
                   <a class="nav-link" href="<?php echo base_url('admin/services_setup'); ?>">
                     <i class="material-icons">bug_report</i>
-                    <p>Services Setup</p>
+                    <p>Services Setup(Home)</p>
                   </a>
                   </li>
                                  

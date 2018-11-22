@@ -9,6 +9,7 @@ class Create_post_model extends CI_Model {
 
      public function set_post_image_name($post_id = 0,$file_name,$full_path)
     {
+        //echo $file_name;exit;
 
              $this->load->helper('url');
         $slug = url_title($this->input->post('post_title'), 'dash', TRUE);

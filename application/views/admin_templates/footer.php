@@ -17,7 +17,7 @@
     
 
   </script>
-  <script src="<?php echo base_url('admin_assets'); ?>/js/core/jquery.min.js" type="text/javascript"></script>
+  
   <script src="<?php echo base_url('admin_assets'); ?>/extra-plugin/datatable/jquery.dataTables.min.js" type="text/javascript"></script>
    <script src="<?php echo base_url('admin_assets'); ?>/extra-plugin/datatable/dataTables.bootstrap4.min.js" type="text/javascript"></script>
   <!--   Core JS Files   -->

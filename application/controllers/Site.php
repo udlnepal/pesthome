@@ -45,7 +45,7 @@ class Site extends CI_Controller {
 	public function index()
 	{
 		$data['test_title']="Comming Soong";
-		$this->display('site/index',$data);
+		$this->display('site/home',$data);
 
 	}
 
@@ -53,6 +53,14 @@ class Site extends CI_Controller {
 	{
 		$data['test_title']="Comming Soong";
 		$this->display('site/index_backup',$data);
+
+	}
+
+
+	public function home3()
+	{
+		$data['test_title']="Comming Soong";
+		$this->display('site/index',$data);
 
 	}
 

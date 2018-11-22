@@ -17,6 +17,7 @@
   <link href="<?php echo base_url('admin_assets'); ?>/css/material-dashboard.css?v=2.1.0" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="<?php echo base_url('admin_assets'); ?>/demo/demo.css" rel="stylesheet" />
+  <script src="<?php echo base_url('admin_assets'); ?>/js/core/jquery.min.js" type="text/javascript"></script>
   <link href="<?php echo base_url('admin_assets'); ?>/extra-plugin/datatable/dataTables.bootstrap4.min.css" rel="stylesheet" />
   <script src="<?php echo base_url('admin_assets'); ?>/extra-plugin/ckeditor/ckeditor.js" type="text/javascript" charset="utf-8"></script>
 </head>
