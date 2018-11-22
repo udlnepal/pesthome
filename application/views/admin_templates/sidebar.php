@@ -49,7 +49,7 @@ $classvalue=$this->uri->segment(2);
                 <b class="caret"></b>
               </p>
             </a>
-            <div class="collapse <?php if ($classvalue=='slider_setup' or $classvalue=='contact_setup' or $classvalue=='menu_setup' or $classvalue=='services_setup')   echo "show"?>" id="pagesExamples" style="">
+            <div class="collapse <?php if ($classvalue=='slider_setup' or $classvalue=='contact_setup' or $classvalue=='menu_setup')   echo "show"?>" id="pagesExamples" style="">
               <ul class="nav">
                 <li class="nav-item <?php if ($classvalue=='menu_setup') echo "active" ?> ">
                   <a class="nav-link" href="<?php echo base_url('admin/menu_setup'); ?>">
@@ -69,23 +69,45 @@ $classvalue=$this->uri->segment(2);
                     <p>Contact Setup</p>
                   </a>
                   </li>
-                    <li class="nav-item <?php if ($classvalue=='services_setup') echo "active" ?> ">
-                  <a class="nav-link" href="<?php echo base_url('admin/services_setup'); ?>">
-                    <i class="material-icons">bug_report</i>
-                    <p>Services Setup(Home)</p>
-                  </a>
-                  </li>
+                 
                                  
               </ul>
             </div>
           </li>
 
-          <!-- <li class="nav-item active-pro ">
-                <a class="nav-link" href="./upgrade.html">
-                    <i class="material-icons">unarchive</i>
-                    <p>Upgrade to PRO</p>
-                </a>
-            </li> -->
+          <li class="nav-item ">
+            <a class="nav-link collapsed" data-toggle="collapse" href="#home_setup" aria-expanded="false">
+              <i class="material-icons">home</i>
+              <p> Home Setup
+                <b class="caret"></b>
+              </p>
+            </a>
+            <div class="collapse <?php if ($classvalue=='vmi_setup' or $classvalue=='services_setup')   echo "show"?>" id="home_setup" style="">
+              <ul class="nav">
+
+                   <li class="nav-item <?php if ($classvalue=='services_setup') echo "active" ?> ">
+                  <a class="nav-link" href="<?php echo base_url('admin/services_setup'); ?>">
+                    <i class="material-icons">bug_report</i>
+                    <p>Services Setup(Home)</p>
+                  </a>
+                  </li>
+               <li class="nav-item <?php if ($classvalue=='vmi_setup') echo "active" ?> ">
+                  <a class="nav-link" href="<?php echo base_url('admin/vmi_setup'); ?>">
+                    <i class="material-icons">visibility</i>
+                    <p>Vision/Mission/Importance</p>
+                  </a>
+                  </li>
+                
+                                 
+              </ul>
+            </div>
+          </li>
+
+
+
+
+
+        
         </ul>
       </div>
     </div>
