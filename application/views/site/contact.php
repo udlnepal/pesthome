@@ -77,7 +77,7 @@
 				</div>
 			<div role="form" class="wpcf7" id="" lang="en-US" dir="ltr">
 				<div class="screen-reader-response"></div>
-				<form>
+				<?php echo form_open('site/add_inquiry'); ?>
 					<div style="display: none;">
 						<input type="hidden" name="_wpcf7" value="3174">
 						<input type="hidden" name="_wpcf7_version" value="5.0.4">
@@ -86,31 +86,30 @@
 						<input type="hidden" name="_wpcf7_container_post" value="3175">
 					</div>
 					<p>
-						<span class="wpcf7-form-control-wrap your-name">
-							<input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Name">
+						<span class=" name">
+							<input type="text" name="name" value="" size="40" class="" aria-required="true" aria-invalid="false" placeholder="Name">
 						</span>
 					</p>
 					<p>
-						<span class="wpcf7-form-control-wrap your-email">
-							<input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email Address">
+						<span class=" email">
+							<input type="email" name="email" value="" size="40" class="" aria-required="true" aria-invalid="false" placeholder="Email Address">
 						</span>
 					</p>
 					<p>
-						<span class="wpcf7-form-control-wrap your-subject">
-							<input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Subject">
+						<span class=" subject">
+							<input type="text" name="subject" value="" size="40" class="" aria-invalid="false" placeholder="Subject">
 						</span>
 					</p>
 					<p>
-						<span class="wpcf7-form-control-wrap your-message">
-							<textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Tell us about your query">
-							</textarea>
+						<span class=" message">
+							<textarea name="message" cols="40" rows="10" class="" aria-invalid="false" placeholder="Tell us about your query"></textarea>
 						</span>
 					</p>
 					<p>
 						<input type="submit" value="SEND MESSAGE" class="wpcf7-form-control wpcf7-submit"><!-- <span class="ajax-loader"></span> -->
 					</p>
 					<div class="wpcf7-response-output wpcf7-display-none"></div>
-				</form>
+				<?php  echo form_close();?>
 			</div>
 		</div>
 		<div class="one_third last">

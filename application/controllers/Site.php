@@ -30,6 +30,7 @@ class Site extends CI_Controller {
         $this->load->model('contact_setup_model');
         $this->load->model('menu_setup_model');
         $this->load->model('create_page_model');
+        $this->load->model('inquiry_model');
 
     }
 	 public function display($view,$data){
@@ -95,4 +96,12 @@ class Site extends CI_Controller {
 			redirect('site');
 		}
 	}
+
+
+	public function add_inquiry(){
+    $this->inquiry_model->set_inquiry();
+    redirect('site/contact');
+
+	}
+
 }

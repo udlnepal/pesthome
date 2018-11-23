@@ -22,12 +22,21 @@ $classvalue=$this->uri->segment(2);
               <p>Dashboard</p>
             </a>
           </li>
+             <li class="nav-item  <?php if ($classvalue=='inquiry') echo "active" ?>  ">
+            <a class="nav-link" href="<?php echo base_url('admin/inquiry') ?>">
+              <i class="material-icons">help_outline</i>
+              <p>Inquiry</p>
+            </a>
+          </li>
+
+
           <li class="nav-item  <?php if ($classvalue=='appointments') echo "active" ?>  ">
             <a class="nav-link" href="<?php echo base_url('admin/appointments') ?>">
               <i class="material-icons">person</i>
               <p>Appointments</p>
             </a>
           </li>
+       
        
           <li class="nav-item   <?php if ($classvalue=='create_post') echo "active" ?>  ">
             <a class="nav-link" href="<?php echo base_url('admin/create_post') ?>">

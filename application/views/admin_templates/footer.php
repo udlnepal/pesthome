@@ -47,6 +47,7 @@
 
      
     $('#appointment').DataTable();
+    $('#inquiry').DataTable();
 
 
     });
