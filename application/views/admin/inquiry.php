@@ -30,7 +30,7 @@
                         <td><?php echo $data['email'] ?> </td>
                         <td><?php echo $data['subject'] ?></td>
                            <td><?php echo $data['message'] ?></td>
-                        <td><a  class="btn btn-danger" href="<?php echo base_url('admin/inquiry/delete/'.$data['inquiry_id']) ?>">Delete</a></td>
+                        <td><a onclick="return confirm('Do you want to delete?')" class="btn btn-danger" href="<?php echo base_url('admin/inquiry/delete/'.$data['inquiry_id']) ?>">Delete</a></td>
         							</tr>
         						<?php endforeach; ?>
                     </tbody>

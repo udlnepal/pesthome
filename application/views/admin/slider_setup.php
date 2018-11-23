@@ -49,7 +49,7 @@
   			<div class="input-group-prepend">
     			<span class="input-group-text">Choose Image</span>
   			</div>
-  			<input type="file"  class="form-control" name="userfile" id="userfile" >
+  			<input type="file" required="required"  class="form-control" name="userfile" id="userfile" >
 		</div>
 			<div class="input-group mb-3">
   			<div class="input-group-prepend">

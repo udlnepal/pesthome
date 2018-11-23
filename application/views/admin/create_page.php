@@ -21,8 +21,14 @@
         						</thead>
         						<tbody>
                       <?php foreach($create_page as $key=>$data): ?>
-        					<tr><td><?php echo $data['page_id'] ?></td><td><?php echo $data['page_title'] ?></td><td><?php echo $data['page_content'] ?></td><td><img style="width:80px;" src="<?php echo base_url('site_assets/uploads/blog/'.$data['page_image_name']) ?>"></td><td>
-                    <a class="btn btn-danger btn-sm" href="<?php echo base_url('admin/create_page/delete/'.$data['page_id'])?>">Delete</a></td></tr>
+        					<tr><td><?php echo $data['page_id'] ?></td><td><?php echo $data['page_title'] ?></td><td><?php echo $data['page_content'] ?></td>
+                    <td>
+                      <?php if($data['page_image_name']!='no_image'){ ?>
+                    <img style="width:80px;" src="<?php echo base_url('site_assets/uploads/page/'.$data['page_image_name']) ?>">
+                      <?php }?>
+                    </td>
+                  <td>
+                    <a onclick="return confirm('Do you really want to delete?')" class="btn btn-danger btn-sm" href="<?php echo base_url('admin/create_page/delete/'.$data['page_id'])?>">Delete</a></td></tr>
                 <?php endforeach; ?>
                     </tbody>
         					</table>        			
@@ -68,7 +74,7 @@
   			<div class="input-group-prepend">
     			<span class="input-group-text">Image</span>
   			</div>
-  			<input type="file" class="form-control" name="userfile" id="userfile" >
+  			<input type="file" class="form-control"  name="userfile" id="userfile" >
 		</div>
 
 

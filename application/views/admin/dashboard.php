@@ -10,8 +10,8 @@
                     <i class="material-icons">help_outline</i>
                   </div>
                   <p class="card-category">Inquiries</p>
-                  <h3 class="card-title"><?php foreach ($inquiry as $key=>$data): 
-               endforeach;echo $key+1;  ?>
+                  <h3 class="card-title"><?php $inquiryc=0; foreach ($inquiry as $key=>$data): 
+             $inquiryc++;  endforeach; echo $inquiryc; ?>
                   </h3>
                 </div>
                 <div class="card-footer">

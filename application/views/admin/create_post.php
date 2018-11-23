@@ -26,7 +26,7 @@
                     <img style="width:80px;" src="<?php echo base_url('site_assets/uploads/blog/'.$data['post_image_name']) ?>">
                       <?php }?>
                   </td><td><?php echo $data['post_date'] ?></td><td>
-                    <a class="btn btn-danger btn-sm" href="<?php echo base_url('admin/create_post/delete/'.$data['post_id'])?>">Delete</a></td></tr>
+                    <a onclick="return confirm('Are you sure want to Delete?')" class="btn btn-danger btn-sm" href="<?php echo base_url('admin/create_post/delete/'.$data['post_id'])?>">Delete</a></td></tr>
                 <?php endforeach; ?>
                     </tbody>
         					</table>        			

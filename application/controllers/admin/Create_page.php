@@ -24,9 +24,9 @@ public function do_upload()
 
 
 
-                $config['upload_path']          = './site_assets/uploads/blog';
+                $config['upload_path']          = './site_assets/uploads/page';
                 $config['allowed_types']        = 'jpg|jpeg|png|gif|svg';
-                $config['file_name']='blog_image';
+                $config['file_name']='page_image';
 
 
                 $this->load->library('upload', $config);
@@ -34,10 +34,35 @@ public function do_upload()
 
                 if ( ! $file )
                 {
-
+/*
                         $error = array('error' => $this->upload->display_errors());
-                     echo "i am still here"; exit;
-                        redirect('admin/create_page', $error);
+                        redirect('admin/create_page', $error);*/
+
+
+$test = $this->uri->segment(4);
+
+if($test==0)
+                    {
+                        $page_id=0;
+                     
+                    }
+                else {
+                  
+                   $page_id = $this->uri->segment(4);
+  
+                }
+
+                        $data = array(
+                            'file_name' => 'no_image',
+                            'full_path' => 'not_found',
+                    );                      
+                        $this->create_page_model->set_page_image_name($page_id,$data['file_name'],$data['full_path']);
+                        redirect('admin/create_page',$data);
+
+
+
+
+
 
                 }
                 else

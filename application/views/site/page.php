@@ -40,7 +40,7 @@
 
 					<div class="postimg">
 					<figure>
-						<img  style="max-height: 250px;"  alt="<?php echo $data['page_image_name'] ?>" src="<?php  echo base_url('site_assets/uploads/blog/'); ?><?php echo $data['page_image_name']?>"></figure>
+						<img  style="max-height: 250px;"  alt="<?php echo $data['page_image_name'] ?>" src="<?php  echo base_url('site_assets/uploads/page/'); ?><?php echo $data['page_image_name']?>"></figure>
 					</div>
 					<div class="entry-content">
 						<p>
