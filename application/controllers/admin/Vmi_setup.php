@@ -12,23 +12,16 @@ class Vmi_setup extends Admin_controller{
 
 
 public function index(){
-	$data['contact_about']=$this->vmi_setup_model->get_contact();
+	$data['vmi_setup']=$this->vmi_setup_model->get_vmi();
 	$data['titlename']=$this->user_model->get_logged_user();
 	$this->display('admin/vmi_setup',$data);
 }
 
 public function add(){
-	$this->form_validation->set_rules('map_plugin', 'Map Plugin', 'required');
-	$this->form_validation->set_rules('address', 'Address', 'required');
-	$this->form_validation->set_rules('email', 'Email', 'required');
-	$this->form_validation->set_rules('phone', 'Phone', 'required');
-	if($this->form_validation->run()===FALSE){
-		redirect('admin/vmi_setup');
-	}else{
-		$this->vmi_setup_model->set_contact();
-		redirect('admin/vmi_setup');
-	}
 
+		$this->vmi_setup_model->set_vmi();
+		redirect('admin/vmi_setup');
+	
 }
 
 /* write above here */

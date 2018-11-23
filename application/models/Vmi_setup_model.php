@@ -9,28 +9,25 @@ class Vmi_setup_model extends CI_Model {
     }
 
 
-    public function set_contact($cont_id=0){
+    public function set_vmi(){
     	$data=array(
-    	'map_plugin'=>$this->input->post('map_plugin'),
-    	'address'=>$this->input->post('address'),
-    	'phone'=>$this->input->post('phone'),
-    	'email'=>$this->input->post('email'),		
-
+    	'vision'=>$this->input->post('vision'),
+    	'mission'=>$this->input->post('mission'),
+    	'introduction'=>$this->input->post('introduction'),
     	);
+      // print_r($data);exit;
 
-    	if($cont_id==0){
-    		return $this->db->insert('contact_about',$data);
-    	}
-    	else{
-    		$this->db->where('cont_id',$cont_id);
-    		return $this->db->update('contact_about',$data);
-    	}
+    
+    
+    		$this->db->where('vmi_id',1);
+    		return $this->db->update('vmi_setup',$data);
+    	
 
     }
 
-    public function get_contact(){
+    public function get_vmi(){
         $this->db->limit(1);
-    	$query=$this->db->get_where('contact_about');
+    	$query=$this->db->get_where('vmi_setup');
 
     	return $query->result_array();
     }
