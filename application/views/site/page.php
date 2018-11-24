@@ -39,8 +39,11 @@
 					</header><!-- .entry-header -->
 
 					<div class="postimg">
+					<?php  if($data['page_image_name']!='no_image') {?>
 					<figure>
-						<img  style="max-height: 250px;"  alt="<?php echo $data['page_image_name'] ?>" src="<?php  echo base_url('site_assets/uploads/page/'); ?><?php echo $data['page_image_name']?>"></figure>
+						<img  style="max-height: 250px;"  alt="<?php echo $data['page_image_name'] ?>" src="<?php  echo base_url('site_assets/uploads/page/'); ?><?php echo $data['page_image_name']?>">
+					</figure>
+				<?php }?>
 					</div>
 					<div class="entry-content">
 						<p>

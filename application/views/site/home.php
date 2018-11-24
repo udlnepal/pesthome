@@ -29,27 +29,29 @@
 <div class="slider_wrapper">
 		<div class="flexslider">
 			<ul class="slides">
-				<li><img alt="Commercial Pest Contol" src="<?php echo base_url('site_assets/'); ?>images/slider1.jpg" width="1920" height="550">						<div class="flex-caption fadeInDown">
+				<?php foreach ($slider_setup as $key=>$data): ?>
+				<li><img alt="Commercial Pest Contol" src="<?php echo base_url('site_assets/'); ?>uploads/slider/<?php echo $data['slider_image_name'] ?>" width="1920" height="550">						<div class="flex-caption fadeInDown">
 					<div class="flex-title">
-						<h5>Cockroach Control</h5>
-						<h6>We pride ourselves on our reputation as Nepal's Pest Control Team”.</h6>
+						<h5><?php echo $data['slider_title'] ?></h5>
+						<h6><?php echo $data['slider_subtitle'] ?></h6>
 					</div> <!-- .flex-title -->
 					</div><!-- .flex-caption -->
 				</li>
-				<li><img    alt="Termite Control" src="<?php echo base_url('site_assets/'); ?>images/slider2.jpg" width="1920" height="550">							<div class="flex-caption fadeInDown">
+				<?php endforeach; ?>
+		<!-- 		<li><img    alt="Termite Control" src="<?php echo base_url('site_assets/'); ?>images/slider2.jpg" width="1920" height="550">							<div class="flex-caption fadeInDown">
 					<div class="flex-title">
 						<h5>Any type of Pest Control</h5>
 						<h6>With our service satisfaction guarantee,  the best value for your money.</h6>
-					</div> <!-- .flex-title -->
-					</div><!-- .flex-caption -->
+					</div>
+					</div>
 				</li>
 				<li><img  alt="Keeps your home bug free!" src="<?php echo base_url('site_assets/'); ?>images/slider3.jpg" width="1920" height="550">					<div class="flex-caption fadeInDown">
 					<div class="flex-title">
 						<h5>Keep your surroundings bugs free</h5>
 						<h6>We are commited to make you free from all sorts of bugs</h6>
-					</div> <!-- .flex-title -->
-					</div><!-- .flex-caption -->
-				</li>
+					</div> 
+					</div>
+				</li> -->
 			</ul>
 		</div><!-- .flexslider -->
 	</div><!-- .flexslider_wrap -->
@@ -108,16 +110,21 @@
 		</div>
 		<div class="one_half">
 			<h4><b>Our Mission</b></h4>
-			<p> Praesent bibendum sed augue nec malesuada. Proin id rhoncus justo, quis mollis lorem. Sed eu diam vitae eros mattis placerat. Nullam varius scelerisque dui, id euismod arcu vestibulum eget. Nulla eu molestie sapien, tristique feugiat ipsum.</p>
-
+			<?php foreach($vmi_setup as $key=>$data): ?>
+			<p> <?php echo $data['mission'] ?></p>
+			<?php endforeach; ?>
 			<h4><b>Our vision</b></h4>
-			<p>Ut vehicula quis tortoreu dictum. Etiam arcu tellus, varius vel varius eget, egestas quis orci. Phasellus porta orci id pretium semper.</p>
+				<?php foreach($vmi_setup as $key=>$data): ?>
+			<p><?php echo $data['vision'] ?></p>
+		<?php endforeach; ?>
 		</div>
 		<div class="one_half last">
 			<h4><b>Importance Of Pest Control</b></h4>
+			<?php foreach($vmi_setup as $key=>$data): ?>
 			<p>
-				Praesent bibendum sed augue nec malesuada. Proin id rhoncus justo, quis mollis lorem. Sed eu diam vitae eros mattis placerat. Nullam varius scelerisque dui, id euismod arcu vestibulum eget. Nulla eu molestie sapien, tristique feugiat ipsum.
+				<?php echo $data['introduction'] ?>
 			</p>
+			<?php endforeach; ?>
 		</div>
 		<div class="clear"></div>
 	</div>
@@ -135,20 +142,22 @@
 	</h1>
 	<p>Pest Management Services for Your Business</p>
 </div>
-	<div class="one_third" >
+	<?php foreach($services_setup as $key=>$data): ?>
+	<div class="col-lg-4" >
 		<div class="atp-services">
 			<div class="serviceIcn_style1">
 				<div class="sIcn_heading">
 					<i class="fa fa-bug services_icon1" style="color:#FA3351;"></i>
 				</div>
 				<div class="sIcn_content">
-					<h3>Bed Bug Pest Control</h3>
-				More than 30000+ customers who have contact us are happy with the pest control service that we have provided for them in past days.
+					<h3><?php echo $data['service_title'] ?></h3>
+				<?php  echo $data['service_content']?>
 			</div>
 		</div>
 	</div>
 </div>
-		<div class="one_third" >
+<?php endforeach; ?>
+	<!-- 	<div class="one_third" >
 			<div class="atp-services">
 				<div class="serviceIcn_style1">
 					<div class="sIcn_heading">
@@ -213,7 +222,7 @@
 				</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<div class="clear"></div>
 </div>
 </div>

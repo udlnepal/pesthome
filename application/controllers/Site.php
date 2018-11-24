@@ -30,12 +30,20 @@ class Site extends CI_Controller {
         $this->load->model('contact_setup_model');
         $this->load->model('menu_setup_model');
         $this->load->model('create_page_model');
+        $this->load->model('services_setup_model');
+        $this->load->model('slider_setup_model');
+        $this->load->model('vmi_setup_model');
+
         $this->load->model('inquiry_model');
 
     }
 	 public function display($view,$data){
 	 	$data['contact_setup']=$this->contact_setup_model->get_contact();
 	 	$data['menu_setup']=$this->menu_setup_model->get_page_from_menu();
+	 	$data['services_setup']=$this->services_setup_model->get_services();
+	 	$data['slider_setup']=$this->slider_setup_model->get_slider_image_name();
+	 		$data['vmi_setup']=$this->vmi_setup_model->get_vmi();
+
 	 		$this->load->view('site_templates/header',$data);
 	 		$this->load->view('site_templates/navigation',$data);
 	 		$this->load->view($view,$data);

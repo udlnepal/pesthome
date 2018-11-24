@@ -48,14 +48,14 @@
 						</div>
 						<div class="one_third">
 							<div class="aligncenter">
-								<i style="color:#444444; font-size:44px;" class="fa fa-whatsapp"></i>
+								<i style="color:#444444; font-size:44px;" class="fa fa-phone"></i>
 							<div class="demo_space" style="height:20px"></div>
-							<h4>WhatsApp</h4>
+							<h4>Phone</h4>
 								<hr>
 							<h5><?php echo $data['phone'] ?></h5>
 							</div>
 						</div>
-						<div class="one_third last">
+					<!-- 	<div class="one_third last">
 							<div class="aligncenter">
 								<i style="color:#444444; font-size:44px;" class="fa fa-phone"></i>
 							<div class="demo_space" style="height:20px"></div>
@@ -63,7 +63,7 @@
 								<hr>
 							<h5><?php echo $data['phone'] ?></h5>
 							</div>
-						</div>
+						</div> -->
 					<?php endforeach; ?>
 						<div class="clear"></div>
 					</div>
