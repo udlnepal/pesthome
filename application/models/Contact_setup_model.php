@@ -9,7 +9,7 @@ class Contact_setup_model extends CI_Model {
     }
 
 
-    public function set_contact($cont_id=0){
+    public function set_contact(){
     	$data=array(
     	'map_plugin'=>$this->input->post('map_plugin'),
     	'address'=>$this->input->post('address'),
@@ -18,13 +18,10 @@ class Contact_setup_model extends CI_Model {
 
     	);
 
-    	if($cont_id==0){
-    		return $this->db->insert('contact_about',$data);
-    	}
-    	else{
-    		$this->db->where('cont_id',$cont_id);
+    
+    		$this->db->where('cont_id',1);
     		return $this->db->update('contact_about',$data);
-    	}
+    	
 
     }
 

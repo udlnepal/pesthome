@@ -46,6 +46,12 @@ class Create_post_model extends CI_Model {
 }
 
 
+public function get_recent_post(){
+   $query=$this->db->query('SELECT * FROM `create_post` ORDER BY `create_post`.`post_date` ASC limit 4');
+   return $query->result_array();
+}
+
+
 
      public function get_post_image_byid($post_id = 0)
     {

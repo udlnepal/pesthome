@@ -28,6 +28,7 @@ class Blog extends CI_Controller {
     public function index()
     {   $data['contact_setup']=$this->contact_setup_model->get_contact();
         $data['create_post']=$this->create_post_model->get_post_image_name();
+        $data['recent_post']=$this->create_post_model->get_recent_post();
     	$data['title']="Welcome to Blog";
     	$this->display('blog/index',$data);
     }

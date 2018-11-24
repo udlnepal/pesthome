@@ -10,7 +10,7 @@
                   <p class="card-category">Setup The Contact Part Here!</p>
                 </div>
                 		<div class="card-body">
-                      <div class="col-lg-12 text-right"><a href="#" data-target="#addModal" data-toggle="modal" class="btn btn-success">ADD</a></div>
+                <?php echo form_open('admin/contact_setup/add'); ?>     
         					<table class="table table-hover">
         					
         						<thead class="text-primary">
@@ -23,11 +23,30 @@
         						<?php  foreach ($contact_about as $key=>$data):?>	
                       
                       <tr>
-        								<td><?php echo $data['map_plugin'] ?></td><td><?php echo $data['address'] ?></td><td><?php echo $data['phone'] ?></td><td><?php echo $data['email'] ?></td><td><button class="btn btn-danger">Delete</button></td>
+        								<td>
+                          <textarea name="map_plugin" class="form-control"><?php echo $data['map_plugin'] ?></textarea>
+                        </td>
+                        <td>
+                          <input type="text" class="form-control" name="address" value="<?php echo $data['address'] ?>">
+                        </td>
+                        <td>
+                          <input type="text" class="form-control" name="phone" value="<?php echo $data['phone'] ?>">
+                        </td>
+                        <td>
+                          <input type="text" class="form-control" name="email" value="<?php echo $data['email'] ?>">
+                        </td>
+                          <td><button type="submit" href="#" class="btn btn-success">Update</button></td>
         							</tr>
         						<?php endforeach; ?>
                     </tbody>
-        					</table>        			
+        					</table>
+                  <?php echo form_close(); ?>
+
+                <?php  foreach ($contact_about as $key=>$data):?>   
+                  <div class="col-lg-12">
+                    <h4 class="text-primary">Map Preview</h4>
+                    <?php echo $data['map_plugin'] ?></div>     
+                  <?php endforeach; ?>   			
         
 </div>
 </div>
@@ -36,52 +55,7 @@
             </div>
 </div>
 </div>
-<div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-   <?php echo form_open('admin/contact_setup/add'); ?> 
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Add Contact</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-       <div class="col-lg-12">
-       	<div class="input-group mb-3">
-  			<div class="input-group-prepend">
-    			<span class="input-group-text">Embedded Code For Map</span>
-  			</div>
-  			<textarea  class="form-control" name="map_plugin" id="man_plugin" ></textarea>
-		</div>
-			<div class="input-group mb-3">
-  			<div class="input-group-prepend">
-    			<span class="input-group-text">Address</span>
-  			</div>
-  			<input  class="form-control" name="address" id="address" >
-		</div>
-		<div class="input-group mb-3">
-  			<div class="input-group-prepend">
-    			<span class="input-group-text">Email</span>
-  			</div>
-  			<input  class="form-control" name="email" id="email" >
-		</div>
-		<div class="input-group mb-3">
-  			<div class="input-group-prepend">
-    			<span class="input-group-text">Phone</span>
-  			</div>
-  			<input  class="form-control" name="phone" id="phone" >
-		</div>
-       </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-<?php echo form_close(); ?>
-  </div>
-</div>
+
 <style>
 iframe{
   height: 200px !important; width: 300px !important;
