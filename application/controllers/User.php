@@ -105,39 +105,37 @@ class User extends CI_Controller {
 
             $data=array();
 
-       
-
         if ($this->session->userdata('is_logged_in')) {
-            $this->load->view('templates/header');
-            
-            // $this->load->view('user/edituser');
-
-            // echo $_SERVER['REQUEST_METHOD'];exit;
-
+            $this->load->view('admin_templates/header');
          
          if($_SERVER['REQUEST_METHOD']=='POST'){
               if($newpassword==$newcpassword){
-                $this->session->set_flashdata('Notmatched','Confirm Password didnt match!');
+              //  $this->session->set_flashdata('Notmatched','Confirm Password didnt match!');
                 //  $this->load->view('user/edituser');
-               $ret= $this->user_model->change_pwd();
+             
 
-                   if($ret){
+               $ret= $this->user_model->change_pwd();
+                
+                /*   if($ret){
                     $data['msg']="Password Changed Successfully!";
                    }else{
                     $data['emsg']="OOPs Something Went Wrong!";
-                   }
+                   }*/
                    // print_r($data);exit;
+
+                   redirect('user/login');
               }
               else{
+
+                   $data['error_change']="Password didnt Match!";
             // echo "shello";    
           }
         }
+        /*$this->session->set_flashdata('error_change','Something Went Wrong Check again with right Credentials');*/
+             $this->load->view('admin_templates/header');
              $this->load->view('user/changepassword',$data);
-             $this->load->view('templates/footer');
+             $this->load->view('admin_templates/footer');
         
-
-
-
         }
         else{
 
