@@ -4,10 +4,10 @@ class User extends CI_Controller {
     public function __construct()
     {
         parent::__construct();
-        $this->load->model('user_model');
-      //  $this->load->model('admin_model');
-        $this->load->helper(array('form', 'url'));
         $this->load->library(array('session', 'form_validation'));
+        $this->load->model('user_model');
+        $this->load->helper(array('form', 'url'));
+       
     }
  
     public function index()
@@ -68,12 +68,6 @@ class User extends CI_Controller {
         { 
             if ($user = $this->user_model->get_user_login($email, $password))
             {   
-                /*$user_data = array(
-                              'email' => $email,
-                              'is_logged_in' => true
-                         );
-                     
-                $this->session->set_userdata($user_data);*/
                 $this->session->set_userdata('firstname',$firstname);
                 $this->session->set_userdata('email', $email);
                 $this->session->set_userdata('user_id', $user['id']);
@@ -85,13 +79,10 @@ class User extends CI_Controller {
             }
             else
             {
-                $this->session->set_flashdata('msg_error','Login credentials does not match!');
-                
+                $this->session->set_flashdata('msg_error','Login credentials does not match!');                
                 $currentClass = $this->router->fetch_class(); // class = controller
-                $currentAction = $this->router->fetch_method(); // action = function
-                
+                $currentAction = $this->router->fetch_method(); // action = function             
                 redirect("$currentClass/$currentAction");
-                //redirect('user/login');
             }
         }
     }
@@ -110,28 +101,16 @@ class User extends CI_Controller {
          
          if($_SERVER['REQUEST_METHOD']=='POST'){
               if($newpassword==$newcpassword){
-              //  $this->session->set_flashdata('Notmatched','Confirm Password didnt match!');
-                //  $this->load->view('user/edituser');
-             
 
                $ret= $this->user_model->change_pwd();
-                
-                /*   if($ret){
-                    $data['msg']="Password Changed Successfully!";
-                   }else{
-                    $data['emsg']="OOPs Something Went Wrong!";
-                   }*/
-                   // print_r($data);exit;
 
                    redirect('user/login');
               }
               else{
 
                    $data['error_change']="Password didnt Match!";
-            // echo "shello";    
           }
         }
-        /*$this->session->set_flashdata('error_change','Something Went Wrong Check again with right Credentials');*/
              $this->load->view('admin_templates/header');
              $this->load->view('user/changepassword',$data);
              $this->load->view('admin_templates/footer');
@@ -150,8 +129,6 @@ class User extends CI_Controller {
     public function logout()
     {    
         if ($this->session->userdata('is_logged_in')) {
-            
-            //$this->session->unset_userdata(array('email' => '', 'is_logged_in' => ''));
             $this->session->unset_userdata('email');
             $this->session->unset_userdata('is_logged_in');
             $this->session->unset_userdata('user_id');            
