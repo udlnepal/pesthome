@@ -9,6 +9,7 @@
                   <p class="card-category">Color Codes for Status: <span class="bg-warning text-dark">Unseen</span> <span class="bg-success">Confirmed</span> <span class="bg-danger">Cancelled</span></p>
                 </div>
                 <div class="card-body">
+                  <div class="col-lg-12 text-right"><a href="<?php echo base_url('admin/appointments/excel_export') ?>" class="btn btn-success">Excel</a></div>
                   <div class="table-responsive">
                     <table class="table table-hover" id="appointment">
                       <thead class=" text-primary">

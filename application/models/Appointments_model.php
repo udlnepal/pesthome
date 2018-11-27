@@ -15,6 +15,13 @@ public function get_appointment(){
 }
 
 
+public function get_appointment_excel(){
+	$this->db->select('*');
+	$this->db->from('add_appointment');
+	$query=$this->db->get();
+	return $query->result();
+}
+
 public function set_app_status($app_id,$app_status){
 $data=array(
 'app_status'=>$app_status,
