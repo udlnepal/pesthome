@@ -91,7 +91,7 @@ $classvalue=$this->uri->segment(2);
                 <b class="caret"></b>
               </p>
             </a>
-            <div class="collapse <?php if ($classvalue=='vmi_setup' or $classvalue=='services_setup')   echo "show"?>" id="home_setup" style="">
+            <div class="collapse <?php if ($classvalue=='vmi_setup' or $classvalue=='services_setup' or $classvalue=='social_setup' )   echo "show"?>" id="home_setup" style="">
               <ul class="nav">
 
                    <li class="nav-item <?php if ($classvalue=='services_setup') echo "active" ?> ">
@@ -104,6 +104,12 @@ $classvalue=$this->uri->segment(2);
                   <a class="nav-link" href="<?php echo base_url('admin/vmi_setup'); ?>">
                     <i class="material-icons">visibility</i>
                     <p>Vision/Mission/Importance</p>
+                  </a>
+                  </li>
+                  <li class="nav-item <?php if ($classvalue=='social_setup') echo "active" ?> ">
+                  <a class="nav-link" href="<?php echo base_url('admin/social_setup'); ?>">
+                    <i class="material-icons">facebook</i>
+                    <p>Social Setup</p>
                   </a>
                   </li>
                 
