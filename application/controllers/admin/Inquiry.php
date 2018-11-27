@@ -34,13 +34,12 @@ public function download_inquiry(){
   $this->load->library('pdf');
   $pdf  = $this->pdf->load(); 
   $data['inquiry']=$this->inquiry_model->get_inquiry();
-   ini_set('memory_limit', '256M');
-        $html = $this->load->view('admin/download_inquiry', $data, true);
-      /*  $pdf->WriteHTML($stylesheet, 1);*/
-        $pdf->WriteHTML($html); 
-        $output = 'Inquiry Report'.'.pdf'; 
-        $pdf->Output($output, 'D'); 
-        exit();    
+  ini_set('memory_limit', '256M');
+  $html = $this->load->view('admin/download_inquiry', $data, true);
+  $pdf->WriteHTML($html); 
+  $output = 'Inquiry Report'.'.pdf'; 
+  $pdf->Output($output, 'D'); /*I for viewing directly in browser*/ 
+  exit();    
 
 }
 
