@@ -1,17 +1,4 @@
-  <div class="content">
-        <div class="container-fluid">
-
-<div class="row">
-                	
-                	<div class="col-lg-12">
-                	<div class="card">
-                    <div class="card-header card-header-primary">
-                  <h4 class="card-title ">Inquiries</h4>
-                  <p class="card-category">Here You will see the inquiries you got from contact page</p>
-                </div>
-                		<div class="card-body">
-                      <div class="col-lg-12 text-right"><a href="<?php echo base_url('admin/inquiry/download_inquiry'); ?>" class="btn btn-danger">PDF</a></div>
-        					<?php echo form_open('admin/vmi_setup/add')?>
+<?php echo form_open('admin/vmi_setup/add')?>
                   <table class="table table-hover" id="inquiry">
         					
         						<thead class="text-primary " >
@@ -35,13 +22,4 @@
         						<?php endforeach; ?>
                     </tbody>
         					</table>   
-                  <?php echo form_close(); ?>     			
-        
-</div>
-</div>
-                	</div>
-               
-            </div>
-</div>
-</div>
-
+                  <?php echo form_close(); ?>  
