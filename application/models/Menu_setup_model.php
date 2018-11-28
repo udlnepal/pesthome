@@ -14,6 +14,7 @@ class Menu_setup_model extends CI_Model {
     	'ms_page_id'=>$this->input->post('ms_page_id'),
     	'ms_title'=>$this->input->post('ms_title'),
     	'ms_order'=>$this->input->post('ms_order'),
+        'ms_has_sub'=>$this->input->post('ms_has_sub'),
     	//'email'=>$this->input->post('email'),		
 
     	);
@@ -41,7 +42,7 @@ class Menu_setup_model extends CI_Model {
     }
 
     public function get_submenu_page(){
-       $query=$this->db->query('SELECT * FROM sub_menu_setup JOIN create_page on sms_page_id=page_id join menu_setup on sms_ms_id=ms_id');
+       $query=$this->db->query('SELECT * FROM sub_menu_setup JOIN create_page on sms_page_id=page_id');
        return $query->result_array();
     }
 

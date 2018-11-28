@@ -16,8 +16,11 @@
         						<thead class="text-primary">
         							
                       <tr>
-        								 <th width="40%">Menu Name</th><th width="15%">Page Id</th><th width="15%">Menu Order</th><th width="15%">Action</th>
+        								 <th width="40%">Page Menu</th><th width="15%">Sub Menu</th><th width="15%">Menu Order</th><th width="15%">Action</th>
         							</tr>
+                      <?php foreach($submenu as $data): ?>
+                        <tr><td><?php echo $data['ms_title'] ?></td><td><?php echo $data['sms_title'] ?></td><td></td><td></td></tr>
+                      <?php endforeach; ?>
         						</thead>
         						<tbody>
         					

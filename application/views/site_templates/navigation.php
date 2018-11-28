@@ -23,17 +23,17 @@
 			</li> -->
 <?php foreach($menu_setup as $data): ?>
 			<li class="menu-item"><a href="<?php echo base_url('site/page/'.$data['slug']); ?>"><?php echo $data['ms_title'] ?></a>
-<?php if($data['ms_page_id']==$data['page_id']){ ?>
+<?php if($data['ms_has_sub']==1){ ?>
 				<ul class="sub-menu">
 
 				<?php foreach($submenu as $key=>$sm):?>
 					
-				
-					<li class="menu-item "><a href="<?php echo base_url('site/page/'.$sm['slug']); ?>">
-					
-			
-					<?php echo $sm['sms_title'] ?></a></li> 
-
+				<?php if($data['ms_id']==$sm['sms_ms_id']){ ?>
+					<li class="menu-item ">
+						<a href="<?php echo base_url('site/page/'.$sm['slug']); ?>"><?php echo $sm['sms_title'] ?>
+						</a>
+					</li> 
+				<?php } ?>
 
 
 				<?php endforeach; ?>
