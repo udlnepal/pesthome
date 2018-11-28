@@ -22,8 +22,32 @@
 				</ul>
 			</li> -->
 <?php foreach($menu_setup as $data): ?>
-			<li class="menu-item"><a href="<?php echo base_url('site/page/'.$data['slug']); ?>"><?php echo $data['ms_title'] ?></a></li>
+			<li class="menu-item"><a href="<?php echo base_url('site/page/'.$data['slug']); ?>"><?php echo $data['ms_title'] ?></a>
+<?php if($data['ms_page_id']==$data['page_id']){ ?>
+				<ul class="sub-menu">
+
+				<?php foreach($submenu as $key=>$sm):?>
+					
+				
+					<li class="menu-item "><a href="<?php echo base_url('site/page/'.$sm['slug']); ?>">
+					
+			
+					<?php echo $sm['sms_title'] ?></a></li> 
+
+
+
+				<?php endforeach; ?>
+
+				</ul>
+
+			<?php }?>
+
+
+			</li>
+			
 <?php endforeach;?>		
+
+
 
 			<li class="menu-item "><a href="<?php echo base_url('blog'); ?>">Blog</a></li>
 			<!-- <li class="menu-item "><a href="../shop/index.html">Shop page</a></li> -->

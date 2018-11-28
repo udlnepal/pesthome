@@ -16,7 +16,7 @@ class Submenu_setup extends Admin_controller{
 
 public function index(){
 	$data['submenu_setup']=$this->submenu_setup_model->get_menu();
-	$data['menu_setup']=$this->menu_setup_model->get_page_from_menu();
+	$data['menu_setup']=$this->menu_setup_model->get_page_menu_sms();
 	$data['create_page']=$this->create_page_model->get_page_image_name();
 	$data['titlename']=$this->user_model->get_logged_user();
 	$this->display('admin/submenu_setup',$data);

@@ -40,6 +40,7 @@ class Site extends CI_Controller {
 	 public function display($view,$data){
 	 	$data['contact_setup']=$this->contact_setup_model->get_contact();
 	 	$data['menu_setup']=$this->menu_setup_model->get_page_from_menu();
+	 	$data['submenu']=$this->menu_setup_model->get_submenu_page();
 	 	$data['services_setup']=$this->services_setup_model->get_services();
 	 	$data['slider_setup']=$this->slider_setup_model->get_slider_image_name();
 	 		$data['vmi_setup']=$this->vmi_setup_model->get_vmi();
