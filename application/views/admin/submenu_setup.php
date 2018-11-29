@@ -19,7 +19,7 @@
         								 <th width="40%">Page Menu</th><th width="15%">Sub Menu</th><th width="15%">Menu Order</th><th width="15%">Action</th>
         							</tr>
                       <?php foreach($submenu as $data): ?>
-                        <tr><td><?php echo $data['ms_title'] ?></td><td><?php echo $data['sms_title'] ?></td><td></td><td></td></tr>
+                        <tr><td><?php echo $data['page_title'] ?></td><td><?php echo $data['sms_title'] ?></td><td><?php echo $data['sms_order'] ?></td><td><a onclick="return confirm('Are you sure you want to delete?')" href="<?php echo base_url('admin/submenu_setup/delete/'.$data['sms_id']); ?>" class="btn btn-danger">Delete</a></td></tr>
                       <?php endforeach; ?>
         						</thead>
         						<tbody>

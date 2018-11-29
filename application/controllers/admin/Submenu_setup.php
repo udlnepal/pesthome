@@ -39,11 +39,11 @@ public function add(){
 }
 
 public function delete(){
-	$ms_id=$this->uri->segment(4);
-	if(empty($ms_id)){
+	$sms_id=$this->uri->segment(4);
+	if(empty($sms_id)){
 		show_404();
 	}
-	$this->submenu_setup_model->delete_menu($ms_id);
+	$this->submenu_setup_model->delete_submenu($sms_id);
 	redirect('admin/submenu_setup');
 }
 

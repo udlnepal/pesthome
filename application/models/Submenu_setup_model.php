@@ -41,9 +41,9 @@ class Submenu_setup_model extends CI_Model {
         return $query->result_array();
     }
 
-    public function delete_menu($ms_id){
-         $this->db->where('ms_id', $ms_id);
-        return $this->db->delete('menu_setup');
+    public function delete_submenu($sms_id){
+         $this->db->where('sms_id', $sms_id);
+        return $this->db->delete('sub_menu_setup');
     }
 /* write above here */
 }
