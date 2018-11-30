@@ -8,6 +8,7 @@ class Create_post extends Admin_controller{
 		  $this->load->model('user_model');
 		    $this->load->helper(array('form', 'url'));
         $this->load->library(array('session', 'form_validation'));
+    
 	}
 
 
@@ -27,11 +28,18 @@ public function do_upload()
                 $config['upload_path']          = './site_assets/uploads/blog';
                 $config['allowed_types']        = 'jpg|jpeg|png|gif|svg';
                 $config['file_name']='blog_image';
+            //    $config['create_thumb'] = TRUE;
+             //   $config['new_image'] = '/site_assets/uploads/blog/thumbnail/blog_tn.jpg';
+
 
 
                 $this->load->library('upload', $config);
                 $file=$this->upload->do_upload('userfile');
-
+            
+   $uploadedImage = $this->upload->data();
+   //    echo $uploadedImage['file_name'];exit;
+        $this->resizeImage($uploadedImage['file_name']);
+        
                 if ( ! $file )
                 {
 $test = $this->uri->segment(4);
@@ -42,10 +50,17 @@ if($test==0)
                      
                     }
                 else {
+
+
+
+        
+
                   
                    $post_id = $this->uri->segment(4);
   
                 }
+
+     
 
                         $data = array(
                             'file_name' => 'no_image',
@@ -81,6 +96,42 @@ if($test==0)
                 }
         }
 
+
+
+
+
+
+   public function resizeImage($filename)
+   {
+   // echo "here";exit;
+      $source_path = $_SERVER['DOCUMENT_ROOT'] . '/pesthome/site_assets/uploads/blog/'. $filename;
+    //  echo $source_path;exit;
+      $target_path = $_SERVER['DOCUMENT_ROOT'] . '/pesthome/site_assets/uploads/blog/thumbnail/'.$filename;
+    //  echo $target_path;exit;
+      $config_manip = array(
+          'image_library' => 'gd2',
+          'source_image' => $source_path,
+          'new_image' => $target_path,
+          'maintain_ratio' => TRUE,
+          'create_thumb' => TRUE,
+       //   'thumb_marker' => '_thumb',
+          'width' => 150,
+          'height' => 150
+      );
+  //  print_r($config_manip);exit;
+
+
+      $this->load->library('image_lib', $config_manip);
+      /*echo "here";exit;*/
+   //   $this->image_lib->resize();
+      if (!$this->image_lib->resize()) {
+          echo $this->image_lib->display_errors();
+      }
+
+
+      $this->image_lib->clear();
+   }
+ 
 
 
 
@@ -123,9 +174,9 @@ if($test==0)
 //echo $file_path; exit;
 if(is_file($file_path)){
         unlink($file_path);
-        echo 'File  has been deleted';
+       // echo 'File  has been deleted';
       } else {
-        echo 'Could not delete file does not exist';
+       // echo 'Could not delete file does not exist';
       }
         $this->create_post_model->delete_post($post_id);        
         redirect( base_url() . 'admin/create_post');        
