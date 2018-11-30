@@ -39,6 +39,8 @@ public function do_upload()
    $uploadedImage = $this->upload->data();
    //    echo $uploadedImage['file_name'];exit;
         $this->resizeImage($uploadedImage['file_name']);
+
+        $this->addwatermark($uploadedImage['file_name']);
         
                 if ( ! $file )
                 {
@@ -114,7 +116,7 @@ if($test==0)
           'new_image' => $target_path,
           'maintain_ratio' => TRUE,
           'create_thumb' => TRUE,
-       //   'thumb_marker' => '_thumb',
+          'thumb_marker' => '',
           'width' => 150,
           'height' => 150
       );
@@ -129,8 +131,34 @@ if($test==0)
       }
 
 
-      $this->image_lib->clear();
+    //  $this->image_lib->clear();
    }
+
+
+
+   public function addwatermark($filename){
+//echo "here";exit;
+$source_path = $_SERVER['DOCUMENT_ROOT'] . '/pesthome/site_assets/uploads/blog/'. $filename;
+//echo $source_path;exit;
+$config['image_library']='gd2';
+$config['source_image'] = $source_path;
+$config['wm_text'] = 'Copyright 2006 - John Doe';
+$config['wm_type'] = 'text';
+$config['wm_font_path'] = './system/fonts/texb.ttf';
+$config['wm_font_size'] = '16';
+$config['wm_font_color'] = 'ffffff';
+$config['wm_vrt_alignment'] = 'bottom';
+$config['wm_hor_alignment'] = 'center';
+$config['wm_padding'] = '20';
+//print_r($config);exit;
+$this->load->library('image_lib',$config);
+//$this->image_lib->initialize($config);
+ if(!$this->image_lib->watermark()){
+//  echo "hello";exit;
+  echo $this->image_lib->display_errors();
+ }
+ $this->image_lib->clear();
+}
  
 
 
@@ -169,11 +197,13 @@ if($test==0)
         //  echo "i am here"; exit;      
         $create_post = $this->create_post_model->get_post_image_byid($post_id);
         $file_path=$create_post['post_image_url'];
-
+        $tn_path=$_SERVER['DOCUMENT_ROOT'] . '/pesthome/site_assets/uploads/blog/thumbnail/'.$create_post['post_image_name'];
+//echo $tn_path;exit;
 
 //echo $file_path; exit;
 if(is_file($file_path)){
         unlink($file_path);
+        unlink($tn_path);
        // echo 'File  has been deleted';
       } else {
        // echo 'Could not delete file does not exist';
